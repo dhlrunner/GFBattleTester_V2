@@ -99,7 +99,7 @@ namespace GFBattleTester_v2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            tabControl1.TabPages.Remove(tabControl1.TabPages[4]);
+            //tabControl1.TabPages.Remove(tabControl1.TabPages[4]);
             ind_RX_timer.Start();
             ind_TX_timer.Start();
             gunNameCsv.AddRange(File.ReadAllLines("data/db/csv/guns.b64"));
@@ -138,7 +138,7 @@ namespace GFBattleTester_v2
             gunselector gs = new gunselector(o);
             gs.FormCloseEvent += new gunselector.FormCloseEventHandler(gunselector_RecieveData);
             gs.Show();
-            tabControl1.TabPages.Add(tabControl1.TabPages[4]);
+           // tabControl1.TabPages.Add(tabControl1.TabPages[4]);
         }
         void gunselector_show()
         {
