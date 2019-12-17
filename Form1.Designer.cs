@@ -32,9 +32,8 @@
             this.server_togglebtn = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.informationpage = new System.Windows.Forms.TabPage();
+            this.sendmailbtn = new System.Windows.Forms.Button();
             this.causeErrorNext = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.logTextbox = new System.Windows.Forms.TextBox();
             this.dollsettingpage = new System.Windows.Forms.TabPage();
             this.button3 = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
@@ -59,6 +58,14 @@
             this.ammo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.equipsettingpage = new System.Windows.Forms.TabPage();
             this.fairysettingpage = new System.Windows.Forms.TabPage();
+            this.serverdebugpage = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.logtextbox_clientrequest = new System.Windows.Forms.TextBox();
+            this.logtextbox_clientresponce = new System.Windows.Forms.TextBox();
+            this.logTextbox = new System.Windows.Forms.TextBox();
             this.server_background = new System.ComponentModel.BackgroundWorker();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tr_RX = new System.Windows.Forms.ToolStripStatusLabel();
@@ -66,23 +73,24 @@
             this.server_status_text = new System.Windows.Forms.ToolStripStatusLabel();
             this.ind_TX_timer = new System.Windows.Forms.Timer(this.components);
             this.ind_RX_timer = new System.Windows.Forms.Timer(this.components);
-            this.sendmailbtn = new System.Windows.Forms.Button();
-            this.serverdebugpage = new System.Windows.Forms.TabPage();
-            this.logtextbox_clientresponce = new System.Windows.Forms.TextBox();
-            this.logtextbox_clientrequest = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.serveripaddrtextbox = new System.Windows.Forms.TextBox();
+            this.serversettingpage = new System.Windows.Forms.TabPage();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.serverport = new System.Windows.Forms.NumericUpDown();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tabControl1.SuspendLayout();
-            this.informationpage.SuspendLayout();
             this.dollsettingpage.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
             this.serverdebugpage.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
+            this.serversettingpage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.serverport)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // server_togglebtn
             // 
-            this.server_togglebtn.Location = new System.Drawing.Point(959, 8);
+            this.server_togglebtn.Location = new System.Drawing.Point(962, 6);
             this.server_togglebtn.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.server_togglebtn.Name = "server_togglebtn";
             this.server_togglebtn.Size = new System.Drawing.Size(158, 38);
@@ -100,6 +108,7 @@
             this.tabControl1.Controls.Add(this.dollsettingpage);
             this.tabControl1.Controls.Add(this.equipsettingpage);
             this.tabControl1.Controls.Add(this.fairysettingpage);
+            this.tabControl1.Controls.Add(this.serversettingpage);
             this.tabControl1.Controls.Add(this.serverdebugpage);
             this.tabControl1.Location = new System.Drawing.Point(12, 13);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -110,9 +119,6 @@
             // 
             // informationpage
             // 
-            this.informationpage.Controls.Add(this.sendmailbtn);
-            this.informationpage.Controls.Add(this.causeErrorNext);
-            this.informationpage.Controls.Add(this.server_togglebtn);
             this.informationpage.Location = new System.Drawing.Point(4, 24);
             this.informationpage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.informationpage.Name = "informationpage";
@@ -122,38 +128,26 @@
             this.informationpage.Text = "정보";
             this.informationpage.UseVisualStyleBackColor = true;
             // 
+            // sendmailbtn
+            // 
+            this.sendmailbtn.Location = new System.Drawing.Point(6, 176);
+            this.sendmailbtn.Name = "sendmailbtn";
+            this.sendmailbtn.Size = new System.Drawing.Size(158, 23);
+            this.sendmailbtn.TabIndex = 4;
+            this.sendmailbtn.Text = "メールを送る";
+            this.sendmailbtn.UseVisualStyleBackColor = true;
+            this.sendmailbtn.Click += new System.EventHandler(this.sendmailbtn_Click);
+            // 
             // causeErrorNext
             // 
             this.causeErrorNext.AutoSize = true;
-            this.causeErrorNext.Location = new System.Drawing.Point(6, 8);
+            this.causeErrorNext.Location = new System.Drawing.Point(14, 22);
             this.causeErrorNext.Name = "causeErrorNext";
             this.causeErrorNext.Size = new System.Drawing.Size(267, 19);
             this.causeErrorNext.TabIndex = 3;
             this.causeErrorNext.Text = "次のサーバ接続時クライアント強制リセット";
             this.causeErrorNext.UseVisualStyleBackColor = true;
             this.causeErrorNext.CheckedChanged += new System.EventHandler(this.causeErrorNext_CheckedChanged);
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button1.Location = new System.Drawing.Point(10, 466);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(248, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Copy userdata to clipboard";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // logTextbox
-            // 
-            this.logTextbox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.logTextbox.Location = new System.Drawing.Point(6, 27);
-            this.logTextbox.Multiline = true;
-            this.logTextbox.Name = "logTextbox";
-            this.logTextbox.ReadOnly = true;
-            this.logTextbox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.logTextbox.Size = new System.Drawing.Size(566, 271);
-            this.logTextbox.TabIndex = 1;
             // 
             // dollsettingpage
             // 
@@ -328,6 +322,98 @@
             this.fairysettingpage.Text = "요정 설정";
             this.fairysettingpage.UseVisualStyleBackColor = true;
             // 
+            // serverdebugpage
+            // 
+            this.serverdebugpage.Controls.Add(this.label3);
+            this.serverdebugpage.Controls.Add(this.label2);
+            this.serverdebugpage.Controls.Add(this.button1);
+            this.serverdebugpage.Controls.Add(this.label1);
+            this.serverdebugpage.Controls.Add(this.logtextbox_clientrequest);
+            this.serverdebugpage.Controls.Add(this.logtextbox_clientresponce);
+            this.serverdebugpage.Controls.Add(this.logTextbox);
+            this.serverdebugpage.Location = new System.Drawing.Point(4, 24);
+            this.serverdebugpage.Name = "serverdebugpage";
+            this.serverdebugpage.Padding = new System.Windows.Forms.Padding(3);
+            this.serverdebugpage.Size = new System.Drawing.Size(1123, 495);
+            this.serverdebugpage.TabIndex = 4;
+            this.serverdebugpage.Text = "Debugging";
+            this.serverdebugpage.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(600, 255);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(124, 15);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Responce to GF client";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(600, 7);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(102, 15);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "GF Client Request";
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button1.Location = new System.Drawing.Point(10, 466);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(248, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Copy userdata to clipboard";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(7, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(87, 15);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Requested URL";
+            // 
+            // logtextbox_clientrequest
+            // 
+            this.logtextbox_clientrequest.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.logtextbox_clientrequest.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.logtextbox_clientrequest.Location = new System.Drawing.Point(603, 27);
+            this.logtextbox_clientrequest.Multiline = true;
+            this.logtextbox_clientrequest.Name = "logtextbox_clientrequest";
+            this.logtextbox_clientrequest.ReadOnly = true;
+            this.logtextbox_clientrequest.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.logtextbox_clientrequest.Size = new System.Drawing.Size(514, 220);
+            this.logtextbox_clientrequest.TabIndex = 2;
+            // 
+            // logtextbox_clientresponce
+            // 
+            this.logtextbox_clientresponce.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.logtextbox_clientresponce.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.logtextbox_clientresponce.Location = new System.Drawing.Point(603, 274);
+            this.logtextbox_clientresponce.Multiline = true;
+            this.logtextbox_clientresponce.Name = "logtextbox_clientresponce";
+            this.logtextbox_clientresponce.ReadOnly = true;
+            this.logtextbox_clientresponce.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.logtextbox_clientresponce.Size = new System.Drawing.Size(514, 215);
+            this.logtextbox_clientresponce.TabIndex = 2;
+            // 
+            // logTextbox
+            // 
+            this.logTextbox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.logTextbox.Location = new System.Drawing.Point(6, 27);
+            this.logTextbox.Multiline = true;
+            this.logTextbox.Name = "logTextbox";
+            this.logTextbox.ReadOnly = true;
+            this.logTextbox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.logTextbox.Size = new System.Drawing.Size(566, 271);
+            this.logTextbox.TabIndex = 1;
+            // 
             // server_background
             // 
             this.server_background.DoWork += new System.ComponentModel.DoWorkEventHandler(this.server_background_DoWork);
@@ -375,85 +461,75 @@
             // 
             this.ind_RX_timer.Tick += new System.EventHandler(this.ind_RX_timer_Tick);
             // 
-            // sendmailbtn
+            // serveripaddrtextbox
             // 
-            this.sendmailbtn.Location = new System.Drawing.Point(959, 53);
-            this.sendmailbtn.Name = "sendmailbtn";
-            this.sendmailbtn.Size = new System.Drawing.Size(158, 23);
-            this.sendmailbtn.TabIndex = 4;
-            this.sendmailbtn.Text = "メールを送る";
-            this.sendmailbtn.UseVisualStyleBackColor = true;
-            this.sendmailbtn.Click += new System.EventHandler(this.sendmailbtn_Click);
+            this.serveripaddrtextbox.Location = new System.Drawing.Point(37, 16);
+            this.serveripaddrtextbox.Name = "serveripaddrtextbox";
+            this.serveripaddrtextbox.Size = new System.Drawing.Size(125, 23);
+            this.serveripaddrtextbox.TabIndex = 5;
+            this.serveripaddrtextbox.TextChanged += new System.EventHandler(this.serveripaddrtextbox_TextChanged);
             // 
-            // serverdebugpage
+            // serversettingpage
             // 
-            this.serverdebugpage.Controls.Add(this.label3);
-            this.serverdebugpage.Controls.Add(this.label2);
-            this.serverdebugpage.Controls.Add(this.button1);
-            this.serverdebugpage.Controls.Add(this.label1);
-            this.serverdebugpage.Controls.Add(this.logtextbox_clientrequest);
-            this.serverdebugpage.Controls.Add(this.logtextbox_clientresponce);
-            this.serverdebugpage.Controls.Add(this.logTextbox);
-            this.serverdebugpage.Location = new System.Drawing.Point(4, 24);
-            this.serverdebugpage.Name = "serverdebugpage";
-            this.serverdebugpage.Padding = new System.Windows.Forms.Padding(3);
-            this.serverdebugpage.Size = new System.Drawing.Size(1123, 495);
-            this.serverdebugpage.TabIndex = 4;
-            this.serverdebugpage.Text = "Debugging";
-            this.serverdebugpage.UseVisualStyleBackColor = true;
+            this.serversettingpage.Controls.Add(this.groupBox1);
+            this.serversettingpage.Controls.Add(this.serverport);
+            this.serversettingpage.Controls.Add(this.label5);
+            this.serversettingpage.Controls.Add(this.label4);
+            this.serversettingpage.Controls.Add(this.serveripaddrtextbox);
+            this.serversettingpage.Controls.Add(this.server_togglebtn);
+            this.serversettingpage.Location = new System.Drawing.Point(4, 24);
+            this.serversettingpage.Name = "serversettingpage";
+            this.serversettingpage.Size = new System.Drawing.Size(1123, 495);
+            this.serversettingpage.TabIndex = 5;
+            this.serversettingpage.Text = "サーバ設定";
+            this.serversettingpage.UseVisualStyleBackColor = true;
             // 
-            // logtextbox_clientresponce
+            // label4
             // 
-            this.logtextbox_clientresponce.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.logtextbox_clientresponce.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.logtextbox_clientresponce.Location = new System.Drawing.Point(603, 274);
-            this.logtextbox_clientresponce.Multiline = true;
-            this.logtextbox_clientresponce.Name = "logtextbox_clientresponce";
-            this.logtextbox_clientresponce.ReadOnly = true;
-            this.logtextbox_clientresponce.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.logtextbox_clientresponce.Size = new System.Drawing.Size(514, 215);
-            this.logtextbox_clientresponce.TabIndex = 2;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(14, 19);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(17, 15);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "IP";
             // 
-            // logtextbox_clientrequest
+            // label5
             // 
-            this.logtextbox_clientrequest.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.logtextbox_clientrequest.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.logtextbox_clientrequest.Location = new System.Drawing.Point(603, 27);
-            this.logtextbox_clientrequest.Multiline = true;
-            this.logtextbox_clientrequest.Name = "logtextbox_clientrequest";
-            this.logtextbox_clientrequest.ReadOnly = true;
-            this.logtextbox_clientrequest.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.logtextbox_clientrequest.Size = new System.Drawing.Size(514, 220);
-            this.logtextbox_clientrequest.TabIndex = 2;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(183, 19);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(29, 15);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Port";
             // 
-            // label1
+            // serverport
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 7);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 15);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Requested URL";
+            this.serverport.Location = new System.Drawing.Point(218, 16);
+            this.serverport.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.serverport.Name = "serverport";
+            this.serverport.Size = new System.Drawing.Size(61, 23);
+            this.serverport.TabIndex = 8;
+            this.serverport.Value = new decimal(new int[] {
+            80,
+            0,
+            0,
+            0});
+            this.serverport.ValueChanged += new System.EventHandler(this.serverport_ValueChanged);
             // 
-            // label2
+            // groupBox1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(600, 7);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 15);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "GF Client Request";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(600, 255);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(124, 15);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Responce to GF client";
+            this.groupBox1.Controls.Add(this.causeErrorNext);
+            this.groupBox1.Controls.Add(this.sendmailbtn);
+            this.groupBox1.Location = new System.Drawing.Point(3, 57);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(467, 205);
+            this.groupBox1.TabIndex = 9;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
             // 
             // Form1
             // 
@@ -469,13 +545,16 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
-            this.informationpage.ResumeLayout(false);
-            this.informationpage.PerformLayout();
             this.dollsettingpage.ResumeLayout(false);
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
             this.serverdebugpage.ResumeLayout(false);
             this.serverdebugpage.PerformLayout();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
+            this.serversettingpage.ResumeLayout(false);
+            this.serversettingpage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.serverport)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -526,6 +605,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TabPage serversettingpage;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.NumericUpDown serverport;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox serveripaddrtextbox;
     }
 }
 

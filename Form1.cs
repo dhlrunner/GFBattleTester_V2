@@ -23,6 +23,7 @@ namespace GFBattleTester_v2
         private ServerProcess httpServer;
         public bool IsServerStart = false;
         public string serveripaddr = "192.168.0.13";
+        public int servport = 80;
         public List<string> gunNameID = new List<string>();
         public JArray gundb = new JArray();
         public string[] type_string = { "hg", "smg", "rf", "ar", "mg", "sg" };
@@ -46,9 +47,7 @@ namespace GFBattleTester_v2
         public Form1()
         {
             frm = this;
-            InitializeComponent();
-            httpServer = new ServerProcess(this, 80, serveripaddr);
-            httpServer.Reqeust += HttpServer_Reqeust;
+            InitializeComponent();           
             CheckForIllegalCrossThreadCalls = false;          
         }
         /*protected override void OnShown(EventArgs e)
@@ -102,6 +101,7 @@ namespace GFBattleTester_v2
             //tabControl1.TabPages.Remove(tabControl1.TabPages[4]);
             ind_RX_timer.Start();
             ind_TX_timer.Start();
+            serveripaddrtextbox.Text = GetLocalIP();
             gunNameCsv.AddRange(File.ReadAllLines("data/db/csv/guns.b64"));
             userdata = JObject.Parse(File.ReadAllText("data/db/json/userinfo.json"));
             homedata = JObject.Parse(File.ReadAllText("data/db/json/home.json"));
@@ -128,7 +128,7 @@ namespace GFBattleTester_v2
         {
 
         }
-
+       
         private void Button3_Click(object sender, EventArgs e)
         {
             gunselector_show();
@@ -365,11 +365,19 @@ namespace GFBattleTester_v2
            
             if (!IsServerStart)
             {
-                DaemonThread = new Thread(new ThreadStart(httpServer.listen));
-                DaemonThread.Start();
-                log_textbox("Server Started");
-                server_status_text.Text = GetLocalIP()+"でサーバ実行中";
-                IsServerStart = true;
+                try{
+                    httpServer = new ServerProcess(this, servport, serveripaddr);
+                    httpServer.Reqeust += HttpServer_Reqeust;
+                    DaemonThread = new Thread(new ThreadStart(httpServer.listen));
+                    DaemonThread.Start();
+                    log_textbox("Server Started");
+                    server_status_text.Text = GetLocalIP() + "でサーバ実行中";
+                    IsServerStart = true;
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
             }
             else
             {
@@ -489,6 +497,16 @@ namespace GFBattleTester_v2
         {
             ((JArray)homedata["index_getmaillist"]).Add(o);
             //Clipboard.SetText(homedata.ToString());
+        }
+
+        private void serveripaddrtextbox_TextChanged(object sender, EventArgs e)
+        {
+            serveripaddr = serveripaddrtextbox.Text;
+        }
+
+        private void serverport_ValueChanged(object sender, EventArgs e)
+        {
+            servport = (int)serverport.Value;
         }
     }
   

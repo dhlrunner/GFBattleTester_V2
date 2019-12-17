@@ -73,7 +73,7 @@ namespace GFBattleTester_v2
                 outdata.Add("month_zero", 0);
                 outdata.Add("next_month_zero",0);
                 outdata.Add("timezone", "Asia / Seoul");
-                outdata.Add("data_version", "942204064f79eb3ba2284864bad63cf6");
+                outdata.Add("data_version", "6fe7682a59f7b2f014c079c2d3b87220");
                 outdata.Add("client_version", "20399");
                 outdata.Add("ab_version", "0");
                 outdata.Add("is_kick", "0");
