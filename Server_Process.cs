@@ -68,9 +68,10 @@ namespace GFBattleTester_v2
             }           
             else if(request.Uri.ToString().Contains(GF_URLs_KR.index_version)){
                 JObject outdata = new JObject();
+                TimeSpan monthzero = (new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1, 0, 0, 0) - new DateTime(1970, 1, 1, 0, 0, 0));
                 outdata.Add("now",Form1.frm.UnixTimeNow().ToString());
                 outdata.Add("tomorrow_zero", (Form1.frm.UnixTimeNow() + (86400 - Form1.frm.UnixTimeNow() % 86400)).ToString());
-                outdata.Add("month_zero", 0);
+                outdata.Add("month_zero", (long)monthzero.TotalSeconds);
                 outdata.Add("next_month_zero",0);
                 outdata.Add("timezone", "Asia / Seoul");
                 outdata.Add("data_version", "6fe7682a59f7b2f014c079c2d3b87220");
@@ -157,6 +158,8 @@ namespace GFBattleTester_v2
             }
             else if (request.Uri.ToString().Contains(GF_URLs_KR.getuserinfo))
             {
+                Form1.frm.userdata["user_record"]["attendance_type1_day"] = DateTime.Now.Day.ToString();
+                Form1.frm.userdata["user_record"]["attendance_type1_time"] = (Form1.frm.UnixTimeNow() + (86400 - Form1.frm.UnixTimeNow() % 86400)).ToString();
                 return Encoding.UTF8.GetBytes(MicaSecurityTools.EncodeWithGzip(Form1.frm.userdata.ToString(), Form1.frm.signkey));
             }
             else if (request.Uri.ToString().Contains(GF_URLs_KR.getdorminfo))

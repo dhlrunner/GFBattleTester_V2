@@ -342,7 +342,7 @@ namespace GFBattleTester_v2
         }
         public long UnixTimeNow()
         {
-            var timeSpan = (DateTime.UtcNow - new DateTime(1970, 1, 1, 0, 0, 0));
+            var timeSpan = (DateTime.Now - new DateTime(1970, 1, 1, 0, 0, 0));
             return (long)timeSpan.TotalSeconds;
         }
         public string GetLocalIP()
