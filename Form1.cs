@@ -57,11 +57,11 @@ namespace GFBattleTester_v2
         }*/
         private void HttpServer_Reqeust(object sender, HttpRequestEventArgs e)
         {
-            indicater_blink_RX();       
+            indicater_blink_RX();
             //log_textbox(string.Format("Request\n\rHost: {0}", e.Request.Headers["Host"])+Environment.NewLine+
             //    String.Format("URL: {0}", e.Request.Url)+Environment.NewLine+
             //    String.Format("User-Agent: {0} ", e.Request.Headers["User-Agent"]));
-            
+            log_textbox(e.Request.Method+" " + e.Request.Url); 
             if (e.Request.GetParameters.Count > 0)
             {
                 log_textbox("GET " +e.Request.Url);

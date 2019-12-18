@@ -53,7 +53,7 @@ namespace GFBattleTester_v2
                     log_clientdata("Sign:"+request.PostParameters["signcode"]);
                 }
             }
-            if (request.Uri.ToString() == "/")
+            if (request.Uri.LocalPath.ToString() == "/")
             {
                 return Encoding.UTF8.GetBytes("Welcome! Simple Http Server");
             }                
