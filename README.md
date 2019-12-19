@@ -26,7 +26,7 @@
 - Console debugging enabled
 
 ## Anyone Can Help ME?
-- i cannot decryp a gfl's gun stats data(it known as cachedata.dat or stc_data.dat files), so im currently using `https://github.com/umang-p/brainlets/blob/master/brainlets/girlsfrontline/static/girlsfrontline/dolls.json` 's data. it is missing some guns data (9000~9045 guns and MODded guns). so i want to decrypt it and make a my own guns db and use a my programs. anyone can help me? im waiting a reply who can decrypt a cachedata.
+- i cannot decrypt a gfl's gun stats data(it known as cachedata.dat or stc_data.dat files), so im currently using `https://github.com/umang-p/brainlets/blob/master/brainlets/girlsfrontline/static/girlsfrontline/dolls.json` 's data. it is missing some guns data (9000~9045 guns and MODded guns). so i want to decrypt it and make a my own guns db and use a my programs. anyone can help me? im waiting a reply who can decrypt a cachedata.
 
 ## Contects
 - dhlrunner@gmail.com
