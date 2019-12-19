@@ -5,7 +5,7 @@
  
  old project has been discontinued. will be archived soon.
 
-#Quick Setup
+## Quick Setup
 - Run the program
 - Go to サーバ設定
 - Set your local IP address in IP textbox, and set your port in Port textbox
