@@ -75,7 +75,7 @@
 - 프로그램 실행 시 콘솔도 같이 열립니다. 프로젝트 설정에서 비활성화 할 수 있습니다.
 
 ### 도움을 구합니다..
-- 소녀전선 클라이언트의 인형 능력치 데이터 (cachedata.dat 또는 stc_data.dat 파일로)를 복호화할수 없기 때문에 현재`https://github.com/umang-p/brainlets/blob/master/brainlets/girlsfrontline/static/girlsfrontline/dolls.json`의 데이터를 사용하고 있습니다. 여기에는 몇 가지 인형 데이터가 누락되어 있습니다 (9000번대 인형 데이터 및 개조된 인형 정보). 이 프로그램의 기능을 더 풍부하게 하기 위해 cachedata.dat 파일의 내용이 필요합니다. 만약 이 파일을 복호화 할 수 있는 분들 중, 그 방법을 가르쳐 주실분이 계신다면, 부디, 아래의 연락처로 연락 부탁드립니다. 감사합니다.
+- 소녀전선 클라이언트의 인형 능력치 데이터 (cachedata.dat 또는 stc_data.dat 파일로 알려져있음)를 복호화할수 없기 때문에 현재`https://github.com/umang-p/brainlets/blob/master/brainlets/girlsfrontline/static/girlsfrontline/dolls.json`의 데이터를 사용하고 있습니다. 여기에는 몇 가지 인형 데이터가 누락되어 있습니다 (9000번대 인형 데이터 및 개조된 인형 정보). 이 프로그램의 기능을 더 풍부하게 하기 위해 cachedata.dat 파일의 내용이 필요합니다. 만약 이 파일을 복호화 할 수 있는 분들 중, 그 방법을 가르쳐 주실분이 계신다면, 부디, 아래의 연락처로 연락 부탁드립니다. 감사합니다.
 
 
 ## Contects
