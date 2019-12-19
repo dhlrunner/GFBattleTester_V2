@@ -10,7 +10,7 @@
 - Go to サーバ設定
 - Set your local IP address in IP textbox, and set your port in Port textbox
 - Go to /data/db/pac forder and open pac.js
-- Edit Line3 to `return "PROXY 192.168.0.13:80";` to `return "PROXY YOUR_IP_ADDR:YOUR_PORT_NUM";` and save file
+- Edit Line3 `return "PROXY 192.168.0.13:80";` to `return "PROXY YOUR_IP_ADDR:YOUR_PORT_NUM";` and save file
 - Click Start Server button
 - Go to your GFKR platform
 - open PAC settings
