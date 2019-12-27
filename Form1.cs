@@ -303,7 +303,7 @@ namespace GFBattleTester_v2
 
                 foreach (var keys in growStats.Properties())
                 {
-                    newStats[keys.Name] = Math.Ceiling(Convert.ToDecimal(newStats[keys.Name]) + (Convert.ToDecimal(growStats[keys.Name][1]) + (Convert.ToDecimal(level - 1) * Convert.ToDecimal(growStats[keys.Name][0])) * Convert.ToDecimal(attribute[type][keys.Name]) * Convert.ToDecimal(stats[keys.Name]) * Convert.ToDecimal(growratio) / 100 / 100));
+                    newStats[keys.Name] = Math.Ceiling(Convert.ToDecimal(newStats[keys.Name]) + (Convert.ToDecimal(growStats[keys.Name][1]) + Convert.ToDecimal(level - 1) * Convert.ToDecimal(growStats[keys.Name][0])) * Convert.ToDecimal(attribute[type][keys.Name]) * Convert.ToDecimal(stats[keys.Name]) * Convert.ToDecimal(growratio) / 100 / 100);
                     //newStat[key] += math.ceil(growStats[key][1] + ((self.level - 1) * growStats[key][0]) * attribute[self.type][key] * stats[key] * growRatio / 100 / 100)
 
                 }
