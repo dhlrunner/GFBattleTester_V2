@@ -4,6 +4,13 @@
  new project from GFBattleTester(https://github.com/dhlrunner/GFBattleTester). 
  
  old project has been discontinued. will be archived soon.
+# Contributor
+ ## dice1024
+  - UI Translate, bug fix
+ ## pohcy 
+  - bug fix
+
+***
 ## English
 ### Quick Setup
 - Run the program
