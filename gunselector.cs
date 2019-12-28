@@ -137,6 +137,14 @@ namespace GFBattleTester_v2
                 ListView.SelectedListViewItemCollection items = listView1.SelectedItems;
                 ListViewItem subitem = items[0];
                 stat_groupbox.Text = string.Format("{0}/{1}({2})",subitem.SubItems[1].Text, subitem.SubItems[2].Text, subitem.SubItems[0].Text);
+                if (checkifmod(subitem.SubItems[0].Text))
+                {
+                    stat_level.Maximum = 120;
+                }
+                else
+                {
+                    stat_level.Maximum = 100;
+                }
                 selectedGuns = Convert.ToInt32(subitem.SubItems[0].Text);
             }
         }
@@ -205,11 +213,15 @@ namespace GFBattleTester_v2
         {
             calc_stat();
         }
-        public bool checkifmod(int id)
+        public bool checkifmod(string id)
         {
-            if (id.ToString().Length == 5 && id.ToString().StartsWith("2"))
+            if (id.Length == 5 && id.StartsWith("2"))
                 return true;
             return false;
+        }
+        public bool checkifmod(int id)
+        {
+            return checkifmod(id.ToString());
         }
         public string getModState(int lv)
         {
