@@ -98,6 +98,14 @@ namespace GFBattleTester_v2
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            server_togglebtn.Text = Properties.Strings.serverstart;
+            tabControl1.TabPages["informationpage"].Text = Properties.Strings.tapPage_info;
+            tabControl1.TabPages["dollsettingpage"].Text = Properties.Strings.tapPage_gunsett;
+            tabControl1.TabPages["equipsettingpage"].Text = Properties.Strings.tapPage_equipsett;
+            tabControl1.TabPages["fairysettingpage"].Text = Properties.Strings.tapPage_fairysett;
+            tabControl1.TabPages["serversettingpage"].Text = Properties.Strings.tapPage_serversett;
+            tr_RX.Text = Properties.Strings.indicater_rx;
+            tr_TX.Text = Properties.Strings.indicater_tx;
             //tabControl1.TabPages.Remove(tabControl1.TabPages[4]);
             ind_RX_timer.Start();
             ind_TX_timer.Start();
@@ -370,8 +378,8 @@ namespace GFBattleTester_v2
                     httpServer.Reqeust += HttpServer_Reqeust;
                     DaemonThread = new Thread(new ThreadStart(httpServer.listen));
                     DaemonThread.Start();
-                    log_textbox("Server Started");
-                    server_status_text.Text = GetLocalIP() + "でサーバ実行中";
+                    log_textbox("Started Server");
+                    server_status_text.Text = string.Format(Properties.Strings.runningServer,GetLocalIP());
                     IsServerStart = true;
                 }
                 catch(Exception ex)
@@ -396,9 +404,9 @@ namespace GFBattleTester_v2
                 }
                 IsServerStart = false;
                 log_textbox("Server Stopped");
-                server_status_text.Text = "休止";
+                server_status_text.Text = Properties.Strings.server_paused;
             }
-            server_togglebtn.Text = IsServerStart ? "Stop Server" : "Start Server";
+            server_togglebtn.Text = IsServerStart ? Properties.Strings.serverstop : Properties.Strings.serverstart;
         }
         public JObject GenerateNewGun(string id, string gunid_index)
         {

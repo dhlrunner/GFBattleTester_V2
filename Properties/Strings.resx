@@ -117,4 +117,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="indicater_rx" xml:space="preserve">
+    <value>RX</value>
+  </data>
+  <data name="indicater_tx" xml:space="preserve">
+    <value>TX</value>
+  </data>
+  <data name="runningServer" xml:space="preserve">
+    <value>Running server at {0}</value>
+  </data>
+  <data name="serverstart" xml:space="preserve">
+    <value>Start Server</value>
+  </data>
+  <data name="serverstop" xml:space="preserve">
+    <value>Stop Server</value>
+  </data>
+  <data name="server_paused" xml:space="preserve">
+    <value>Server Paused</value>
+  </data>
+  <data name="tapPage_equipsett" xml:space="preserve">
+    <value>Equip Setting</value>
+  </data>
+  <data name="tapPage_fairysett" xml:space="preserve">
+    <value>Fairy Setting</value>
+  </data>
+  <data name="tapPage_gunsett" xml:space="preserve">
+    <value>T-Doll Setting</value>
+  </data>
+  <data name="tapPage_info" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="tapPage_serversett" xml:space="preserve">
+    <value>Server Setting</value>
+  </data>
 </root>

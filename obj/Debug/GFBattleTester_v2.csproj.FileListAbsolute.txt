@@ -54,3 +54,26 @@ C:\Users\dhlru\Desktop\Code\gfbt\GFBattleTester_v2\obj\Debug\GFBattleTester_v2.c
 C:\Users\dhlru\Desktop\Code\gfbt\GFBattleTester_v2\obj\Debug\GFBattleTester_v2.exe
 C:\Users\dhlru\Desktop\Code\gfbt\GFBattleTester_v2\obj\Debug\GFBattleTester_v2.pdb
 C:\Users\dhlru\Desktop\Code\gfbt\GFBattleTester_v2\obj\Debug\GFBattleTester_v2.SendMail.resources
+C:\Users\DHL\Desktop\My files\code\Code\gfbt\GFBattleTester_v2\bin\Debug\GFBattleTester_v2.exe.config
+C:\Users\DHL\Desktop\My files\code\Code\gfbt\GFBattleTester_v2\bin\Debug\GFBattleTester_v2.exe
+C:\Users\DHL\Desktop\My files\code\Code\gfbt\GFBattleTester_v2\bin\Debug\GFBattleTester_v2.pdb
+C:\Users\DHL\Desktop\My files\code\Code\gfbt\GFBattleTester_v2\bin\Debug\ko\GFBattleTester_v2.resources.dll
+C:\Users\DHL\Desktop\My files\code\Code\gfbt\GFBattleTester_v2\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\DHL\Desktop\My files\code\Code\gfbt\GFBattleTester_v2\bin\Debug\neo365.Server.dll
+C:\Users\DHL\Desktop\My files\code\Code\gfbt\GFBattleTester_v2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\DHL\Desktop\My files\code\Code\gfbt\GFBattleTester_v2\bin\Debug\neo365.Server.pdb
+C:\Users\DHL\Desktop\My files\code\Code\gfbt\GFBattleTester_v2\bin\Debug\ICSharpCode.SharpZipLib.pdb
+C:\Users\DHL\Desktop\My files\code\Code\gfbt\GFBattleTester_v2\bin\Debug\ICSharpCode.SharpZipLib.xml
+C:\Users\DHL\Desktop\My files\code\Code\gfbt\GFBattleTester_v2\bin\Debug\Newtonsoft.Json.xml
+C:\Users\DHL\Desktop\My files\code\Code\gfbt\GFBattleTester_v2\obj\Debug\GFBattleTester_v2.csprojAssemblyReference.cache
+C:\Users\DHL\Desktop\My files\code\Code\gfbt\GFBattleTester_v2\obj\Debug\GFBattleTester_v2.Form1.resources
+C:\Users\DHL\Desktop\My files\code\Code\gfbt\GFBattleTester_v2\obj\Debug\GFBattleTester_v2.gunselector.resources
+C:\Users\DHL\Desktop\My files\code\Code\gfbt\GFBattleTester_v2\obj\Debug\GFBattleTester_v2.Properties.Resources.resources
+C:\Users\DHL\Desktop\My files\code\Code\gfbt\GFBattleTester_v2\obj\Debug\GFBattleTester_v2.Properties.Strings.resources
+C:\Users\DHL\Desktop\My files\code\Code\gfbt\GFBattleTester_v2\obj\Debug\GFBattleTester_v2.SendMail.resources
+C:\Users\DHL\Desktop\My files\code\Code\gfbt\GFBattleTester_v2\obj\Debug\GFBattleTester_v2.Properties.Strings.ko.resources
+C:\Users\DHL\Desktop\My files\code\Code\gfbt\GFBattleTester_v2\obj\Debug\GFBattleTester_v2.csproj.GenerateResource.cache
+C:\Users\DHL\Desktop\My files\code\Code\gfbt\GFBattleTester_v2\obj\Debug\ko\GFBattleTester_v2.resources.dll
+C:\Users\DHL\Desktop\My files\code\Code\gfbt\GFBattleTester_v2\obj\Debug\GFBattleTester_v2.csproj.CopyComplete
+C:\Users\DHL\Desktop\My files\code\Code\gfbt\GFBattleTester_v2\obj\Debug\GFBattleTester_v2.exe
+C:\Users\DHL\Desktop\My files\code\Code\gfbt\GFBattleTester_v2\obj\Debug\GFBattleTester_v2.pdb
