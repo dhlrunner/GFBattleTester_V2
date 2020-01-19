@@ -80,6 +80,7 @@
             this.server_status_text = new System.Windows.Forms.ToolStripStatusLabel();
             this.ind_TX_timer = new System.Windows.Forms.Timer(this.components);
             this.ind_RX_timer = new System.Windows.Forms.Timer(this.components);
+            this.editpacbutton = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.dollsettingpage.SuspendLayout();
             this.serversettingpage.SuspendLayout();
@@ -251,6 +252,7 @@
             // 
             // serversettingpage
             // 
+            this.serversettingpage.Controls.Add(this.editpacbutton);
             this.serversettingpage.Controls.Add(this.groupBox1);
             this.serversettingpage.Controls.Add(this.serverport);
             this.serversettingpage.Controls.Add(this.label5);
@@ -413,6 +415,13 @@
             // 
             this.ind_RX_timer.Tick += new System.EventHandler(this.ind_RX_timer_Tick);
             // 
+            // editpacbutton
+            // 
+            resources.ApplyResources(this.editpacbutton, "editpacbutton");
+            this.editpacbutton.Name = "editpacbutton";
+            this.editpacbutton.UseVisualStyleBackColor = true;
+            this.editpacbutton.Click += new System.EventHandler(this.editpacbutton_Click);
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -489,6 +498,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox serveripaddrtextbox;
+        private System.Windows.Forms.Button editpacbutton;
     }
 }
 

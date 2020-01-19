@@ -600,6 +600,11 @@
             // stat_level
             // 
             this.stat_level.Location = new System.Drawing.Point(26, 64);
+            this.stat_level.Maximum = new decimal(new int[] {
+            120,
+            0,
+            0,
+            0});
             this.stat_level.Minimum = new decimal(new int[] {
             1,
             0,

@@ -13102,7 +13102,7 @@
     "api_name": "hk23",
     "spritesheet_row": 30,
     "spritesheet_col": 5,
-    "name": "HK23",
+    "name": "Gr MG23",
     "rarity": 3,
     "type": 5,
     "mod": false,
@@ -13121,7 +13121,7 @@
     "construct_time": 19500,
     "uncraftable": true,
     "en_craftable": false,
-    "en_released":false,
+    "en_released": true,
     "artist": "Rain Lan",
     "voice": "Satomi Satou",
     "name_skill1": "Lock and Load",
@@ -14194,7 +14194,7 @@
     "construct_time": 6600,
     "uncraftable": true,
     "en_craftable": false,
-    "en_released":false,
+    "en_released": true,
     "artist": "spirtie",
     "voice": "Harumi Sowa",
     "name_skill1": "Stun Grenade",
@@ -14264,7 +14264,7 @@
     "construct_time": 2700,
     "uncraftable": true,
     "en_craftable": false,
-    "en_released":false,
+    "en_released": true,
     "artist": "小吃",
     "voice": "Asuka Kawakami",
     "name_skill1": "Fire Command",
@@ -15539,7 +15539,7 @@
     "construct_time": 15600,
     "uncraftable": true,
     "en_craftable": false,
-    "en_released":false,
+    "en_released": true,
     "artist": "卑しい人间",
     "voice": "TBD",
     "name_skill1": "Lock-on Focus",
@@ -18606,7 +18606,7 @@
         },
         {
           "type":"buff",
-          "target":"none",
+          "target":"enemy",
           "name":"avenger",
           "duration":-1
         }
@@ -18614,7 +18614,7 @@
     },
     "name_skill2": "Avenger's Mark",
     "icon_name_skill2": "m4_nightmare",
-    "tooltip_skill2": "Passive: When skill1 activates, if there are 3 dolls or less on the field, decrease rate of fire by 70% and each attack will deal 600% and 100% damage to a 2.5 unit radius from the target. Also applies the avenger's mark debuff on the enemy",
+    "tooltip_skill2": "Passive: When skill1 activates, mark the current target with [Seal of the Avenger]. Additionally, if there are 3 or less dolls on the field, decrease self rate of fire by 70% and each attack will deal 600% damage to the target and 100% splash damage to enemies within a 2.5 unit radius from the target.",
     "skill2": {
       "icd":-1,
       "cd":[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1],
@@ -18710,7 +18710,7 @@
     },
     "name_skill2": "Frenzied Circus",
     "icon_name_skill2": "splitgrenade",
-    "tooltip_skill2": "Passive: After the grenade detonates, it splits into 3 smaller grenades dealing 1.9x damage to enemies within a 1 unit radius. If the enemy is marked by Avenger's Mark, the smaller grenades will deal an additional 0.25x damage",
+    "tooltip_skill2": "Passive: After the grenade detonates, it splits into 3 smaller grenades dealing 1.9x damage to enemies within a 1 unit radius. If the enemy is marked by [Seal of the Avenger], the smaller grenades will deal an additional 0.25x damage",
     "skill2": {
       "icd":0,
       "cd":[],
@@ -18780,7 +18780,7 @@
     },
     "name_skill2": "Crime and Punishment",
     "icon_name_skill2": "ar15_shot",
-    "tooltip_skill2": "Passive: When skill1 is activated, pull out secondary weapon and attack simultaneously, dealing 10% of the primary weapon's damage (20% if avenger's mark is on the enemy)",
+    "tooltip_skill2": "Passive: When skill1 is activated, pull out secondary weapon and attack simultaneously, dealing 10% of the primary weapon's damage (20% if [Seal of the Avenger] is on the enemy)",
     "skill2": {
       "icd":4,
       "cd":[20,19.6,19.1,18.7,18.2,17.8,17.3,16.9,16.4,16],
@@ -20059,7 +20059,7 @@
     "en_craftable": false,
     "en_released":false,
     "artist": "水熊",
-    "voice": "TBD",
+    "voice": "Miku Itou",
     "name_skill1": "Revenger's Fortress",
     "icon_name_skill1": "lwmmgshield",
     "tooltip_skill1": "Initial CD: 6s, CD: 12s<br>Grant a 42HP shield to all allies for 6 seconds. If the shield still exists after 3 seconds, increase damage and accuracy by 35% for 5 seconds",
@@ -20195,7 +20195,7 @@
     "en_craftable": true,
     "en_released":true,
     "artist": "DANGERDROP",
-    "voice": "TBD",
+    "voice": "Yui Ogura",
     "name_skill1": "Killing Intent of the Silent",
     "icon_name_skill1": "m200shot",
     "tooltip_skill1": "Initial CD: 6s, CD: 16s<br>Active: Enter sniper mode for 9 seconds. After every 1.5 seconds of aiming, deal 2x damage (able to crit, affected by armor) to the furthest target and decrease their damage dealt by 10% for 3 seconds.<br>Passive: Normal attacks against armorless enemies deal 1.05x damage",
@@ -20353,7 +20353,7 @@
     "en_craftable": false,
     "en_released":false,
     "artist": "XIN",
-    "voice": "TBD",
+    "voice": "Mayu Mineda",
     "name_skill1": "Charge Focus",
     "icon_name_skill1": "powbuff",
     "tooltip_skill1": "Initial CD: 6s, CD: 16s<br>Increase self damage by 50% and rate of fire by 20% for 10 seconds",
@@ -20416,7 +20416,7 @@
     "en_craftable": false,
     "en_released":false,
     "artist": "音符",
-    "voice": "TBD",
+    "voice": "You Taichi",
     "name_skill1": "Phantasmal Dark Force",
     "icon_name_skill1": "combobuffself",
     "tooltip_skill1": "Initial CD: 6s, CD: 8s<br>Increase self evasion by 100% and decrease self damage and accuracy by 30% and all attacks hit twice for 5 seconds",
@@ -20487,7 +20487,7 @@
     "en_craftable": false,
     "en_released":false,
     "artist": "hanasa",
-    "voice": "TBD",
+    "voice": "Nichika Oomori",
     "name_skill1": "Fleur-de-Lis",
     "icon_name_skill1": "chauchat",
     "tooltip_skill1": "Initial CD: 6s, CD: 2s<br>Passive: Start battle with 1 stack. Gain 1 stack every 4 seconds for up to 4 stacks.<br>Active: Consume up to 2 stacks to reduce the next reload time by 20% per stack. (44% reload time reduction if 2 stacks are used, 20% if one stack is used)",
@@ -20563,7 +20563,7 @@
     "en_craftable": false,
     "en_released":false,
     "artist": "暖森",
-    "voice": "TBD",
+    "voice": "Yukana",
     "name_skill1": "Shadow Veil",
     "icon_name_skill1": "mg36",
     "tooltip_skill1": "Initial CD: 8s, CD: 18s<br>Passive: While reloading, damage taken by dolls on her tiles is reduced by 20%.<br>Active: Increase self damage by 55% for 6 seconds and gain buffs based on the types of dolls on her tiles, stacking up to 3 times per type of buff: ARs grant 25% accuracy, SMGs grant 25% faster reload speed, SGs grant +1 clip size",
@@ -20652,7 +20652,7 @@
     "en_craftable": false,
     "en_released":false,
     "artist": "X布",
-    "voice": "TBD",
+    "voice": "Rikako Aida",
     "name_skill1": "Crispy Cookie Shot",
     "icon_name_skill1": "em2",
     "tooltip_skill1": "Initial CD: 6s, CD: 16s<br>Fire 3 special shots at random enemies, dealing 3.5x damage per shot. Each shot can crit, doesn't miss, and doesn't ignore armor",
@@ -20715,7 +20715,7 @@
     "en_craftable": false,
     "en_released":false,
     "artist": "薯子Imoko",
-    "voice": "TBD",
+    "voice": "Mariya Ise",
     "name_skill1": "Rushing Cloud",
     "icon_name_skill1": "88sniper",
     "tooltip_skill1": "Initial CD: 8s, CD: 16s<br>Active: After aiming for 1.5 seconds, deal 5x damage to the enemy with the highest hp and 1.5x damage to enemies within a radius of 1.5 units to that enemy.<br>Passive: Every 3rd shot on the same target deals 1.5x damage to enemies in a radius of 1.5 units",
@@ -20888,7 +20888,7 @@
     "en_craftable": false,
     "en_released":false,
     "artist": "FKEY",
-    "voice": "TBD",
+    "voice": "Chiaki Omigawa",
     "name_skill1": "Assault Focus T",
     "icon_name_skill1": "ratebuffself",
     "tooltip_skill1": "Initial CD: 4s, CD: 16s<br>Increase self rate of fire by 60% for 10 seconds",
@@ -20950,7 +20950,7 @@
     "en_craftable": false,
     "en_released":false,
     "artist": "ASK",
-    "voice": "TBD",
+    "voice": "Yukana",
     "name_skill1": "Lucky Trigger",
     "icon_name_skill1": "r93",
     "tooltip_skill1": "Initial CD: 6s, CD: 8s<br>Passive: Consecutive shots on the same enemy increase self rate of fire by 10% for 3 seconds, stacking up to 3 times. Stacks reset upon changing targets.<br>Active: Increase self damage by 40% for 5 seconds, mark a target and attack only that target for 3 seconds, and do not reset passive stacks when changing targets",
@@ -22061,7 +22061,7 @@
     "en_craftable": false,
     "en_released":false,
     "artist": "狂気の君",
-    "voice": "TBD",
+    "voice": "Hitomi Sekine",
     "name_skill1": "Smoke Grenade",
     "icon_name_skill1": "moke",
     "tooltip_skill1": "Initial CD: 1s, CD: 16s<br>Launch a smoke grenade that decreases enemy rate of fire by 36% and movement speed by 50% within a radius of 2.5 units for 4 seconds",
@@ -22131,7 +22131,7 @@
     "en_craftable": false,
     "en_released":false,
     "artist": "藤ちょこ",
-    "voice": "TBD",
+    "voice": "Miku Itou",
     "name_skill1": "Dead Line Strike",
     "icon_name_skill1": "4type",
     "tooltip_skill1": "Initial CD: 6s, CD: 8s<br>Active: Increase self rate of fire by 55% for 5 seconds.<br>Passive: Every 3rd shot cannot miss and has a piercing effect, dealing 1x damage to the target and all enemies it passes through.",
@@ -22434,7 +22434,7 @@
     "en_craftable": false,
     "en_released":false,
     "artist": "sola7764",
-    "voice": "TBD",
+    "voice": "Kana Yuuki",
     "name_skill1": "Damage Focus",
     "icon_name_skill1": "powbuffself",
     "tooltip_skill1": "Initial CD: 5s, CD: 8s<br>Increase self damage by 60% for 5 seconds",
@@ -22765,7 +22765,7 @@
     "en_craftable": false,
     "en_released":false,
     "artist": "DDAL",
-    "voice": "TBD",
+    "voice": "You Taichi",
     "name_skill1": "Lock and Load",
     "icon_name_skill1": "combobuffself",
     "tooltip_skill1": "Initial CD: 8s, CD: 18s<br>Increase self damage by 30% for 8 seconds and increase the ammo count for the current salvo by 3",
@@ -22907,7 +22907,7 @@
     "en_craftable": false,
     "en_released":false,
     "artist": "时辰",
-    "voice": "TBD",
+    "voice": "Kana Yuuki",
     "name_skill1": "High Pressure Assault",
     "icon_name_skill1": "kord",
     "tooltip_skill1": "Initial CD: 0s, CD: 3s<br>Activate to switch between penetration and assault mode. Penetration (default mode): Decrease self damage by 30% and armor penetration by 50%, but attacks pierce enemies. Assault: Increase self damage and accuracy by 20%",
@@ -22982,7 +22982,7 @@
     "en_craftable": false,
     "en_released":false,
     "artist": "saitom",
-    "voice": "TBD",
+    "voice": "Mariya Ise",
     "name_skill1": "Shadow Strangling Tune",
     "icon_name_skill1": "acr",
     "tooltip_skill1": "Initial CD: 6s, CD: 8s<br>Active: Increase self rate of fire by 50% for 5 seconds. While skill is active, decrease damage of the target by 20% for 3 seconds, stacking up to 5 times.<br>Passive: Increase self damage when attacking enemies that are under the effects of: -dmg, -rof, -acc, -eva, -armor, -move speed, burning, stunned. When the enemy has 1 type of debuff, increase ACR's damage by 10%. For each additional type of debuff, increase damage by an additional 5%.",
@@ -23076,7 +23076,7 @@
     "en_craftable": false,
     "en_released":false,
     "artist": "钟式机动红领巾",
-    "voice": "TBD",
+    "voice": "Hitomi Sekine",
     "name_skill1": "Preparedness",
     "icon_name_skill1": "m1895cb",
     "tooltip_skill1": "Initial CD: 3s, CD: 5s<br>Active: Toggle reserve ammo shooting mode. Use 1 reserve ammo per attack, increasing self damage by 20% and decreasing self accuracy by 15% for 5 seconds. Accuracy reduction stacks up to 10 times. Normal ammo will be used up before starting to use reserve ammo.<br>Passive: Start the battle with 30 reserve ammo, gaining 1 reserve ammo every 3 seconds while not reloading (up to a max of 30 reserve ammo).",
@@ -23186,7 +23186,7 @@
     "en_craftable": false,
     "en_released":false,
     "artist": "原子Dan",
-    "voice": "TBD",
+    "voice": "Mayu Mineda",
     "name_skill1": "Firepower Suppression",
     "icon_name_skill1": "powdebuff",
     "tooltip_skill1": "Initial CD: 6s, CD: 12s<br>Decrease all enemies' damage by 25% for 8 seconds",
@@ -23269,7 +23269,7 @@
     "en_craftable": false,
     "en_released":false,
     "artist": "Anmi",
-    "voice": "TBD",
+    "voice": "Yui Ogura",
     "name_skill1": "Deterrent Mark",
     "icon_name_skill1": "deagle",
     "tooltip_skill1": "Initial CD: 6s, CD: 12s<br>Active: Increase self rate of fire by 40% for 8 seconds, mark the three enemies with the highest combined hp+shield value, increasing their damage taken by 10% for 12 seconds, and focus on attacking the marked enemies, dealing 0.6x extra damage per shot, stacking up to 3 times. Passive: Attacks penetrate hp shields, dealing an equivalent amount of damage to the shield as well.",
@@ -23369,7 +23369,7 @@
     "en_craftable": false,
     "en_released":false,
     "artist": "受兔",
-    "voice": "TBD",
+    "voice": "Nichika Oomori",
     "name_skill1": "Burst Impact",
     "icon_name_skill1": "shotgun",
     "tooltip_skill1": "Initial CD: 8s, CD: 16s<br>Perform an extra attack, dealing 2.5x damage and causing a knockback effect of 3 units",
@@ -23614,6 +23614,313 @@
         "eva": 0,
         "rof": 0,
         "crit": 0,
+        "skillcd": 0,
+        "armor": 0
+      }
+    }
+  },
+  {
+    "id": 317,
+    "id_index": 284,
+    "aliases": ["Zastava M76"],
+    "api_name": "zastavam76",
+    "spritesheet_row": 0,
+    "spritesheet_col": 0,
+    "name": "Zas M76",
+    "rarity": 3,
+    "type": 3,
+    "mod": false,
+    "hp": 95,
+    "fp": 102,
+    "acc": 118,
+    "eva": 102,
+    "rof": 107,
+    "crit": 40,
+    "critdmg": 50,
+    "ap": 15,
+    "rounds": 0,
+    "armor": 0,
+    "growth_rating": 119,
+    "construct_time": 0,
+    "uncraftable": true,
+    "en_craftable": false,
+    "en_released":false,
+    "artist": "青空kamiya",
+    "voice": "TBD",
+    "name_skill1": "Assault Focus",
+    "icon_name_skill1": "ratebuffself",
+    "tooltip_skill1": "Initial CD: 5s, CD: 8s<br>Increase self rate of fire by 60% for 5 seconds.",
+    "skill": {
+      "icd":5,
+      "cd":[10,9.8,9.6,9.3,9.1,8.9,8.7,8.4,8.2,8],
+      "effects": [
+        {
+          "type":"buff",
+          "target":"self",
+          "stat":{
+            "rof":[35,38,41,43,46,49,52,54,57,60]
+          },
+          "duration":[3,3.2,3.4,3.7,3.9,4.1,4.3,4.6,4.8,5]
+        }
+      ]
+    },
+    "tooltip_skill2": "",
+    "tooltip_tiles": "Skill Cooldown -12%",
+    "tiles": {
+      "self": 23,
+      "target": "1,11",
+      "target_type": 1,
+      "effect": {
+        "fp": 0,
+        "acc": 0,
+        "eva": 0,
+        "rof": 0,
+        "crit": 0,
+        "skillcd": 12,
+        "armor": 0
+      }
+    }
+  },
+  {
+    "id": 318,
+    "id_index": 288,
+    "aliases": ["Vektor CR-21"],
+    "api_name": "cr21",
+    "spritesheet_row": 0,
+    "spritesheet_col": 0,
+    "name": "CR-21",
+    "rarity": 4,
+    "type": 4,
+    "mod": false,
+    "hp": 100,
+    "fp": 107,
+    "acc": 126,
+    "eva": 103,
+    "rof": 121,
+    "crit": 20,
+    "critdmg": 50,
+    "ap": 15,
+    "rounds": 0,
+    "armor": 0,
+    "growth_rating": 117,
+    "construct_time": 12900,
+    "en_craftable": false,
+    "en_released":false,
+    "artist": "K箱",
+    "voice": "Machida Kayu",
+    "name_skill1": "Muscle Pump",
+    "icon_name_skill1": "musclepump",
+    "tooltip_skill1": "Initial CD: 5s, CD: 8s<br>Increase self damage by 60% and target enemies with the highest damage for 5 seconds.",
+    "skill": {
+      "icd":5,
+      "cd":[10,9.8,9.6,9.3,9.1,8.9,8.7,8.4,8.2,8],
+      "effects": [
+        {
+          "type":"buff",
+          "target":"self",
+          "stat":{
+            "fp":[30,33,37,40,43,47,50,53,57,60]
+          },
+          "duration":[3,3.2,3.4,3.7,3.9,4.1,4.3,4.6,4.8,5]
+        }
+      ]
+    },
+    "tooltip_skill2": "",
+    "tooltip_tiles": "Accuracy +50%, Evasion +12%",
+    "tiles": {
+      "self": 23,
+      "target": "1,-9",
+      "target_type": 2,
+      "effect": {
+        "fp": 0,
+        "acc": 50,
+        "eva": 12,
+        "rof": 0,
+        "crit": 0,
+        "skillcd": 0,
+        "armor": 0
+      }
+    }
+  },
+  {
+    "id": 319,
+    "id_index": 12,
+    "aliases": ["Mauser Construktion 96 Mod"],
+    "api_name": "c96mod",
+    "spritesheet_row": 0,
+    "spritesheet_col": 0,
+    "name": "C96Mod",
+    "rarity": 4,
+    "type": 1,
+    "mod": true,
+    "hp": 125,
+    "fp": 115,
+    "acc": 104,
+    "eva": 96,
+    "rof": 120,
+    "crit": 20,
+    "critdmg": 50,
+    "ap": 15,
+    "rounds": 0,
+    "armor": 0,
+    "growth_rating": 113,
+    "construct_time": 1800,
+    "en_craftable": false,
+    "en_released": false,
+    "artist": "林檎愛す",
+    "voice": "Ayaka Itatani",
+    "name_skill1": "Flare",
+    "icon_name_skill1": "flare",
+    "tooltip_skill1": "Initial CD: 3s, CD: 16s<br>Increase all allies' accuracy by 120% during night only for 15 seconds",
+    "skill": {
+      "icd":3,
+      "cd":[20,19.6,19.1,18.7,18.2,17.8,17.3,16.9,16.4,16],
+      "effects": [
+        {
+          "type":"buff",
+          "target":"all",
+          "stat":{
+            "acc":[60,67,73,80,87,93,100,107,113,120]
+          },
+          "duration":[8,9,10,11,12,12,13,13,14,15],
+          "requirements":{
+            "night":true
+          }
+        }
+      ]
+    },
+    "name_skill2": "Night Sky Pursuer",
+    "icon_name_skill2": "nightskypursuer",
+    "tooltip_skill2": "Passive: When flare is activated, grant all allies +2 ammo to their current clip and increase all allies' crit damage by 20% for 8 seconds",
+    "skill2": {
+      "icd":3,
+      "cd":[20,19.6,19.1,18.7,18.2,17.8,17.3,16.9,16.4,16],
+      "effects": [
+        {
+          "type":"loadRounds",
+          "target":"all",
+          "rounds":[1,1,1,1,1,2,2,2,2,2]
+        },
+        {
+          "type":"buff",
+          "target":"all",
+          "stat":{
+            "critdmg":[10,11,12,13,14,16,17,18,19,20]
+          },
+          "duration":[5,5.3,5.7,6,6.3,6.7,7,7.3,7.7,8]
+        }
+      ]
+    },
+    "tooltip_tiles": "Accuracy +80%, Evasion +40%",
+    "tiles": {
+      "self": 23,
+      "target": "1,9,-11",
+      "target_type": 0,
+      "effect": {
+        "fp": [
+          0,
+          0
+        ],
+        "acc": [
+          40,
+          80
+        ],
+        "eva": [
+          20,
+          40
+        ],
+        "rof": [
+          0,
+          0
+        ],
+        "crit": [
+          0,
+          0
+        ],
+        "skillcd": [
+          0,
+          0
+        ],
+        "armor": [
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "id": 320,
+    "id_index": 280,
+    "aliases": ["Pistolet-Mitrailleur de 9 mm modèle 1949"],
+    "api_name": "mat49",
+    "spritesheet_row": 0,
+    "spritesheet_col": 0,
+    "name": "MAT-49",
+    "rarity": 4,
+    "type": 2,
+    "mod": false,
+    "hp": 105,
+    "fp": 105,
+    "acc": 103,
+    "eva": 111,
+    "rof": 101,
+    "crit": 5,
+    "critdmg": 50,
+    "ap": 15,
+    "rounds": 0,
+    "armor": 0,
+    "growth_rating": 119,
+    "construct_time": 0,
+    "uncraftable": true,
+    "en_craftable": false,
+    "en_released":false,
+    "artist": "hanasa",
+    "voice": "TBD",
+    "name_skill1": "Last Minute Preparations",
+    "icon_name_skill1": "dodgebuffself",
+    "tooltip_skill1": "Initial CD: 6s, CD: 8s<br>Gain self buffs based on the number of enemies remaining. With only 1 group of enemies left, increase self damage by 45% for 5 seconds (with 3 stacks). For each additional enemy, remove 1 damage buff and add 1 evasion buff, increasing self evasion by 30% for 5 seconds. Evasion buff can stack up to 6 times",
+    "skill": {
+      "icd":6,
+      "cd":[10,9.8,9.6,9.3,9.1,8.9,8.7,8.4,8.2,8],
+      "effects": [
+        {
+          "type":"buff",
+          "target":"self",
+          "stat":{
+            "eva":[12,14,16,18,20,22,24,26,28,30]
+          },
+          "duration":[3,3.2,3.4,3.7,3.9,4.1,4.3,4.6,4.8,5],
+          "stackable":true,
+          "name":"mat49eva",
+          "stacks":2,
+          "max_stacks":6
+        },
+        {
+          "type":"buff",
+          "target":"self",
+          "stat":{
+            "fp":[25,27,29,32,34,36,38,41,43,45]
+          },
+          "duration":[3,3.2,3.4,3.7,3.9,4.1,4.3,4.6,4.8,5],
+          "stackable":true,
+          "name":"js9fp",
+          "stacks":1,
+          "max_stacks":3
+        }
+      ]
+    },
+    "tooltip_skill2": "",
+    "tooltip_tiles": "Damage +20%, Crit Rate +20%",
+    "tiles": {
+      "self": 33,
+      "target": "-1,-21",
+      "target_type": 4,
+      "effect": {
+        "fp": 20,
+        "acc": 0,
+        "eva": 0,
+        "rof": 0,
+        "crit": 20,
         "skillcd": 0,
         "armor": 0
       }

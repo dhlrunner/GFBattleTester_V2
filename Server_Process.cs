@@ -192,7 +192,7 @@ namespace GFBattleTester_v2
                 return Encoding.UTF8.GetBytes("1");
             }
             
-            return Encoding.UTF8.GetBytes("error:202|[GFBattleTester_v2]\nまだサポートされてない機能です。");
+            return Encoding.UTF8.GetBytes("error:202|[GFBattleTester_v2]\n"+Properties.Strings.message_server_notsupported);
         }
 
     }

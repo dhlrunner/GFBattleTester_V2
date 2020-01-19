@@ -77,3 +77,4 @@ C:\Users\DHL\Desktop\My files\code\Code\gfbt\GFBattleTester_v2\obj\Debug\ko\GFBa
 C:\Users\DHL\Desktop\My files\code\Code\gfbt\GFBattleTester_v2\obj\Debug\GFBattleTester_v2.csproj.CopyComplete
 C:\Users\DHL\Desktop\My files\code\Code\gfbt\GFBattleTester_v2\obj\Debug\GFBattleTester_v2.exe
 C:\Users\DHL\Desktop\My files\code\Code\gfbt\GFBattleTester_v2\obj\Debug\GFBattleTester_v2.pdb
+C:\Users\DHL\Desktop\My files\code\Code\gfbt\GFBattleTester_v2\obj\Debug\GFBattleTester_v2.paceditform.resources

@@ -32,15 +32,18 @@ namespace GFBattleTester_v2
         public JObject userdata = new JObject();
         public JObject homedata = new JObject();
         public int gun_id_db = 1;
-        public long[] gun_exp_table = {0,100,300,400,600,1000,1500,2100,2800,3600,4500,5500,6600,7800,9100,10500,
-        12000,13600,15300,17100,19000,21000,23000,25300,27600,30000,32500,35100,37900,41000,44400,48600,
-        53200,58200,63600,69400,75700,82400,89600,97300,105500,114300,123600,133500,144000,155100,166900,179400,
-        192500,206400,221000,236400,252500,269400,287100,305700,325200,345600,366900,389200,412500,436800,462100,
-        488400,515800,544300,573900,604700,636700,669900,704300,749400,796200,844800,895200,947400,1001400,1057300,
-        1115200,1175000,1236800,1300700,1366700,1434800,1505100,1577700,1652500,1729600,1809100,1891000,1975300,
-        2087900,2204000,2323500,2446600,2573300,2703700,2837800,2975700,3117500,3263200,3363200,3483200,3623200,3783200,
-        3963200,4163200,4383200,4623200,4983200,5463200,6103200,7003200,8203200,9803200,12803200,16803200,21803200,
-        27803200,32803200}; //thanks to dice1024
+        public long[] gun_exp_table = {0,100,300,600,1000,1500,2100,2800,3600,4500,5500,6600,7800,9100,
+        10500,12000,13600,15300,17100,19000,21000,23100,25300,27600,30000,32500,35100,37900,41000,44400,
+        48600,53200,58200,63600,69400,75700,82400,89600,97300,105500,114300,123600,133500,144000,155100,
+        166900,179400,192500,206400,221000,236400,252500,269400,287200,305800,325300,345700,367000,389300,
+        412600,436900,462200,488500,515900,544400,574000,604800,636800,670000,704400,749500,796300,844900,
+        895300,947500,1001500,1057400,1115300,1175100,1236900,1300800,1366800,1434900,1505200,1577800,
+        1652600,1729700,1809200,1891100,1975400,2088000,2204100,2323600,2446700,
+        2573400,2703800,2837900,2975800,3117600,3263300,
+        3363300,3483300,3623300,3783300,3963300,
+        4163300,4383300,4623300,4903300,5263300,
+        5743300,6383300,7283300,8483300,10083300,
+        12283300,15283300,19283300,24283300,30823300}; //thanks to dice1024
         public int[] gun_position = { 0, 7, 12, 17, 8, 13, 18, 9, 14, 19 };
         public List<string> gunNameCsv = new List<string>();
         public List<int> GeneratedgunIDs = new List<int>();
@@ -225,13 +228,29 @@ namespace GFBattleTester_v2
         }
         public JObject getGunInfoFromDB(string id)
         {
-            foreach (JObject a in gundb)
+            if (id.Length == 5 && id.StartsWith("2"))
             {
-                if (a["id_index"].ToString() == id)
+                foreach (JObject a in gundb)
                 {
-                    return a;
+                    if (a["id_index"].ToString() == (int.Parse(id) - 20000).ToString())
+                    {
+                        if(a["api_name"].ToString().Contains("mod"))
+                            return a;
+                    }
                 }
             }
+            else
+            {
+                foreach (JObject a in gundb)
+                {
+
+                    if (a["id_index"].ToString() == id)
+                    {
+                        return a;
+                    }
+                }
+            }
+            
             return null;
         }
         public JObject getGunInfoFromDB(int id)
@@ -369,8 +388,7 @@ namespace GFBattleTester_v2
             return myIP;
         }
         private void server_togglebtn_Click(object sender, EventArgs e)
-        {
-           
+        {         
             if (!IsServerStart)
             {
                 try{
@@ -407,6 +425,8 @@ namespace GFBattleTester_v2
                 server_status_text.Text = Properties.Strings.server_paused;
             }
             server_togglebtn.Text = IsServerStart ? Properties.Strings.serverstop : Properties.Strings.serverstart;
+            serveripaddrtextbox.Enabled = !IsServerStart;
+            serverport.Enabled = !IsServerStart;
         }
         public JObject GenerateNewGun(string id, string gunid_index)
         {
@@ -515,6 +535,12 @@ namespace GFBattleTester_v2
         private void serverport_ValueChanged(object sender, EventArgs e)
         {
             servport = (int)serverport.Value;
+        }
+
+        private void editpacbutton_Click(object sender, EventArgs e)
+        {
+            paceditform edit = new paceditform();
+            edit.Show();
         }
     }
   

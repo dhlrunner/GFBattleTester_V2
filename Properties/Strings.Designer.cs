@@ -79,6 +79,15 @@ namespace GFBattleTester_v2.Properties {
         }
         
         /// <summary>
+        ///   This feature is not supported yet.과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string message_server_notsupported {
+            get {
+                return ResourceManager.GetString("message_server_notsupported", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Running server at {0}과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
         internal static string runningServer {
