@@ -67,7 +67,7 @@ namespace GFBattleTester_v2
             mail.Add("content", bodytext.Text);
             mail.Add("code", "");
             mail.Add("start_time",  MicaSecurityTools.GetCurrentTimeStamp().ToString());
-            mail.Add("end_time",  ((DateTimeOffset)dateTimePicker1.Value).ToUnixTimeSeconds().ToString());
+            mail.Add("end_time", notime.Checked ? "2100000000" : ((DateTimeOffset)dateTimePicker1.Value).ToUnixTimeSeconds().ToString());
             mail.Add("if_read", "0");
             this.FormCloseEvent(mail);
             Close();
@@ -76,6 +76,11 @@ namespace GFBattleTester_v2
         private void notime_CheckedChanged(object sender, EventArgs e)
         {
             dateTimePicker1.Enabled = !notime.Checked;
+        }
+
+        private void SendMail_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

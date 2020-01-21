@@ -135,6 +135,7 @@
             this.Controls.Add(this.titletext);
             this.Name = "SendMail";
             this.Text = "SendMail";
+            this.Load += new System.EventHandler(this.SendMail_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
