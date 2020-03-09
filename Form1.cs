@@ -12,6 +12,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Windows.Forms;
 using System.IO;
+using Tulpep.NotificationWindow;
 using neo365.Server.Http;
 
 namespace GFBattleTester_v2
@@ -52,6 +53,18 @@ namespace GFBattleTester_v2
             frm = this;
             InitializeComponent();           
             CheckForIllegalCrossThreadCalls = false;          
+        }
+        public void notification_show (string title, string data)
+        {
+            this.Invoke((MethodInvoker)delegate
+            {
+                PopupNotifier pop = new PopupNotifier();
+                pop.TitleFont = this.Font;             
+                pop.TitleText ="[GFBT]" + title;
+                pop.ContentText = data;
+                pop.ContentFont = this.Font;
+                pop.Popup();
+            });           
         }
         /*protected override void OnShown(EventArgs e)
         {
@@ -101,6 +114,7 @@ namespace GFBattleTester_v2
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
             server_togglebtn.Text = Properties.Strings.serverstart;
             tabControl1.TabPages["informationpage"].Text = Properties.Strings.tapPage_info;
             tabControl1.TabPages["dollsettingpage"].Text = Properties.Strings.tapPage_gunsett;
@@ -117,7 +131,8 @@ namespace GFBattleTester_v2
             userdata = JObject.Parse(File.ReadAllText("data/db/json/userinfo.json"));
             homedata = JObject.Parse(File.ReadAllText("data/db/json/home.json"));
             JArray userdata_guninfo = JArray.Parse(userdata["gun_with_user_info"].ToString());
-            gundb = JArray.Parse(File.ReadAllText("data/db/json/dolls.json"));           
+            gundb = JArray.Parse(File.ReadAllText("data/db/json/dolls.json"));
+            gundb.Merge(JArray.Parse(File.ReadAllText("data/db/json/dolls_missing.json")));
             foreach (string name in gunNameCsv)
             {
                 string[] t = name.Split(',');
@@ -397,8 +412,9 @@ namespace GFBattleTester_v2
                     DaemonThread = new Thread(new ThreadStart(httpServer.listen));
                     DaemonThread.Start();
                     log_textbox("Started Server");
-                    server_status_text.Text = string.Format(Properties.Strings.runningServer,GetLocalIP());
+                    server_status_text.Text = string.Format(Properties.Strings.runningServer, serveripaddr +":" + servport);
                     IsServerStart = true;
+                    notification_show(Properties.Strings.notification,string.Format(Properties.Strings.server_started_alert, serveripaddr+":"+ servport));
                 }
                 catch(Exception ex)
                 {
@@ -488,7 +504,75 @@ namespace GFBattleTester_v2
         {
             Clipboard.SetText(userdata.ToString());
         }
+        public void addResource(int mp,int ammo,int mre,int part)
+        {
+            Random n = new Random();
+            JObject mail = new JObject();
+            mail.Add("id", n.Next(1, 99999999).ToString()); ;
+            mail.Add("user_id", "0");
+            mail.Add("type", "6");
+            mail.Add("sub_id", "0");
+            mail.Add("user_exp", "0");
+            mail.Add("mp", mp.ToString());
+            mail.Add("ammo", ammo.ToString());
+            mail.Add("mre", mre.ToString());
+            mail.Add("part", part.ToString());
+            mail.Add("core", "0");
+            mail.Add("gem", "0");
+            mail.Add("gun_id", "0");
+            mail.Add("fairy_ids", "");
+            mail.Add("item_ids", "");
+            mail.Add("equip_ids", "");
+            mail.Add("furniture", "");
+            mail.Add("gift", "");
+            mail.Add("coins", "");
+            mail.Add("skin", "0");
+            mail.Add("commander_uniform", "");
+            mail.Add("bp_pay", "0");
+            mail.Add("chip", "");
+            mail.Add("title", "GiveResource");
+            mail.Add("content", "");
+            mail.Add("code", "");
+            mail.Add("start_time", MicaSecurityTools.GetCurrentTimeStamp().ToString());
+            mail.Add("end_time", "2100000000");
+            mail.Add("if_read", "0");
+            ((JArray)homedata["index_getmaillist"]).Add(mail);
+        }
 
+        public void addGuns(int id)
+        {
+            Random n = new Random();
+            JObject mail = new JObject();
+            mail.Add("id", n.Next(1, 99999999).ToString()); ;
+            mail.Add("user_id", "0");
+            mail.Add("type", "6");
+            mail.Add("sub_id", "0");
+            mail.Add("user_exp", "0");
+            mail.Add("mp", "0");
+            mail.Add("ammo", "0");
+            mail.Add("mre", "0");
+            mail.Add("part", "0");
+            mail.Add("core", "0");
+            mail.Add("gem", "0");
+            mail.Add("gun_id", id.ToString());
+            mail.Add("fairy_ids", "");
+            mail.Add("item_ids", "");
+            mail.Add("equip_ids", "");
+            mail.Add("furniture", "");
+            mail.Add("gift", "");
+            mail.Add("coins", "");
+            mail.Add("skin", "0");
+            mail.Add("commander_uniform", "");
+            mail.Add("bp_pay", "0");
+            mail.Add("chip", "");
+            mail.Add("title", string.Format("GiveGuns {0}",id.ToString()));
+            mail.Add("content", "");
+            mail.Add("code", "");
+            mail.Add("start_time", MicaSecurityTools.GetCurrentTimeStamp().ToString());
+            mail.Add("end_time", "2100000000");
+            mail.Add("if_read", "0");
+            ((JArray)homedata["index_getmaillist"]).Add(mail);
+        }
         private void causeErrorNext_CheckedChanged(object sender, EventArgs e)
         {
 

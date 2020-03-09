@@ -115,7 +115,7 @@
             this.listView1.Location = new System.Drawing.Point(12, 75);
             this.listView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(477, 480);
+            this.listView1.Size = new System.Drawing.Size(553, 489);
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -166,6 +166,7 @@
             // 
             // stat_groupbox
             // 
+            this.stat_groupbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.stat_groupbox.Controls.Add(this.stat_inteamlocation);
             this.stat_groupbox.Controls.Add(this.stat_teamid);
             this.stat_groupbox.Controls.Add(this.stat_autocalc);
@@ -200,7 +201,7 @@
             this.stat_groupbox.Controls.Add(this.stat_fire);
             this.stat_groupbox.Controls.Add(this.stat_level);
             this.stat_groupbox.Enabled = false;
-            this.stat_groupbox.Location = new System.Drawing.Point(495, 66);
+            this.stat_groupbox.Location = new System.Drawing.Point(602, 66);
             this.stat_groupbox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.stat_groupbox.Name = "stat_groupbox";
             this.stat_groupbox.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -622,8 +623,9 @@
             // 
             // applybtn
             // 
+            this.applybtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.applybtn.Enabled = false;
-            this.applybtn.Location = new System.Drawing.Point(760, 532);
+            this.applybtn.Location = new System.Drawing.Point(867, 541);
             this.applybtn.Name = "applybtn";
             this.applybtn.Size = new System.Drawing.Size(96, 23);
             this.applybtn.TabIndex = 5;
@@ -635,7 +637,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(868, 567);
+            this.ClientSize = new System.Drawing.Size(976, 576);
             this.Controls.Add(this.applybtn);
             this.Controls.Add(this.stat_groupbox);
             this.Controls.Add(this.searchbtn);

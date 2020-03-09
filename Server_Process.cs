@@ -64,6 +64,7 @@ namespace GFBattleTester_v2
                 if (request.Uri.ToString().Contains(GF_URLs_KR.host)  && Form1.frm.causeErrorNext.Checked)
             {
                 Form1.frm.causeErrorNext.Checked = false;
+                Form1.frm.notification_show(Properties.Strings.notification, Properties.Strings.reset_client);
                 return Encoding.UTF8.GetBytes("error:1");
             }           
             else if(request.Uri.ToString().Contains(GF_URLs_KR.index_version)){
@@ -74,8 +75,8 @@ namespace GFBattleTester_v2
                 outdata.Add("month_zero", (long)monthzero.TotalSeconds);
                 outdata.Add("next_month_zero",0);
                 outdata.Add("timezone", "Asia / Seoul");
-                outdata.Add("data_version", "6fe7682a59f7b2f014c079c2d3b87220");
-                outdata.Add("client_version", "20399");
+                outdata.Add("data_version", "193aded53d62f9b6dc784174e8dc8751");
+                outdata.Add("client_version", "20302");
                 outdata.Add("ab_version", "0");
                 outdata.Add("is_kick", "0");
                 outdata.Add("weekday", 4);
@@ -162,6 +163,72 @@ namespace GFBattleTester_v2
                 Form1.frm.userdata["user_record"]["attendance_type1_time"] = (Form1.frm.UnixTimeNow() + (86400 - Form1.frm.UnixTimeNow() % 86400)).ToString();
                 return Encoding.UTF8.GetBytes(MicaSecurityTools.EncodeWithGzip(Form1.frm.userdata.ToString(), Form1.frm.signkey));
             }
+            else if (request.Uri.ToString().Contains(GF_URLs_KR.Getfriendlist))
+            {
+                JObject list = JObject.Parse(File.ReadAllText(@"data\db\json\friend.json"));
+                return Encoding.UTF8.GetBytes(MicaSecurityTools.EncodeWithGzip(list.ToString(), Form1.frm.signkey));
+            }
+            else if (request.Uri.ToString().Contains(GF_URLs_KR.putMsg))
+            {
+                JObject responce = JObject.Parse(datafromclient);
+                string msg = responce["message"].ToString();
+                if (msg.StartsWith("/"))
+                {
+                    string command = msg.Substring(1).Split(' ')[0];
+                    try
+                    {
+                        if (command.ToLower() == "give")
+                        {
+                            string func = msg.Substring(1).Split(' ')[1];
+                            if (func.ToLower() == "resource")
+                            {
+                                int[] mount = Array.ConvertAll(msg.Substring(1).Split(' ')[2].Split(','), s => int.Parse(s));
+                                Form1.frm.addResource(mount[0], mount[1], mount[2], mount[3]);
+                                return Encoding.UTF8.GetBytes("error:202|[GFBattleTester_v2]\n" + string.Format("인력:{0}, 탄약:{1}, 식량{2}, 부품:{3} 개를 우편으로 보냈습니다.",
+                                    mount[0], mount[1], mount[2], mount[3]));
+                            }
+                            else if(func.ToLower() == "gun")
+                            {
+                                int id = int.Parse(msg.Substring(1).Split(' ')[2]);
+                                Form1.frm.addGuns(id);
+                                return Encoding.UTF8.GetBytes("error:202|[GFBattleTester_v2]\n" + string.Format("인형 {0}을(를) 우편으로 보냈습니다.",Form1.frm.getgunKRNAme(id.ToString())));
+                            }
+                            return Encoding.UTF8.GetBytes("error:202|[GFBattleTester_v2]\n" + "알 수 없는 옵션:" + func);
+                        }
+                        return Encoding.UTF8.GetBytes("error:202|[GFBattleTester_v2]\n" + "알 수 없는 명령어: " + command);
+                    }
+                    catch(Exception ex)
+                    {
+                        return Encoding.UTF8.GetBytes("error:202|[GFBattleTester_v2]\n" + "명령어 분석 오류\n"+ex.ToString());
+                    }
+                   
+                }
+                return Encoding.UTF8.GetBytes(MicaSecurityTools.EncodeWithGzip("{\"list\":[]}", Form1.frm.signkey));
+            }
+            else if (request.Uri.ToString().Contains(GF_URLs_KR.gunoath))
+            {
+                JObject t = new JObject();
+                t.Add("soul_bond_time", Form1.frm.UnixTimeNow());
+                return Encoding.UTF8.GetBytes(MicaSecurityTools.EncodeWithGzip(t.ToString(), Form1.frm.signkey));
+            }
+           else if (request.Uri.ToString().Contains(GF_URLs_KR.getResourceinmail))
+            {
+                JObject id = JObject.Parse(datafromclient);
+                string mailid = id["mail_with_user_id"].ToString();
+                return Encoding.UTF8.GetBytes(MicaSecurityTools.EncodeWithGzip(string.Format("[{0}]",mailid), Form1.frm.signkey));
+            }
+            else if (request.Uri.ToString().Contains(GF_URLs_KR.Getfriendapplylist))
+            {            
+                return Encoding.UTF8.GetBytes(MicaSecurityTools.EncodeWithGzip("{\"list\":[]}", Form1.frm.signkey));
+            }
+            else if (request.Uri.ToString().Contains(GF_URLs_KR.Getfriendmsglist))
+            {              
+                return Encoding.UTF8.GetBytes(MicaSecurityTools.EncodeWithGzip("{\"list\":[]}", Form1.frm.signkey));
+            }
+            else if (request.Uri.ToString().Contains(GF_URLs_KR.Getfriendmsg))
+            {
+                return Encoding.UTF8.GetBytes(MicaSecurityTools.EncodeWithGzip("{\"list\":[]}", Form1.frm.signkey));
+            }
             else if (request.Uri.ToString().Contains(GF_URLs_KR.getdorminfo))
             {
                 return Encoding.UTF8.GetBytes(MicaSecurityTools.EncodeWithGzip(File.ReadAllText("data/db/json/dorm.json"), Form1.frm.signkey));
@@ -171,8 +238,7 @@ namespace GFBattleTester_v2
                 return Encoding.UTF8.GetBytes("1");
             }
             else if (request.Uri.ToString().Contains(GF_URLs_KR.home))
-            {
-                
+            {               
                 return Encoding.UTF8.GetBytes(MicaSecurityTools.EncodeWithGzip(Form1.frm.homedata.ToString(), Form1.frm.signkey));
             }
             else if (request.Uri.ToString().Contains(GF_URLs_KR.attendance))

@@ -126,6 +126,12 @@
   <data name="message_server_notsupported" xml:space="preserve">
     <value>This feature is not supported yet.</value>
   </data>
+  <data name="notification" xml:space="preserve">
+    <value>Alert</value>
+  </data>
+  <data name="reset_client" xml:space="preserve">
+    <value>The client has been reset.</value>
+  </data>
   <data name="runningServer" xml:space="preserve">
     <value>Running server at {0}</value>
   </data>
@@ -137,6 +143,9 @@
   </data>
   <data name="server_paused" xml:space="preserve">
     <value>Server Paused</value>
+  </data>
+  <data name="server_started_alert" xml:space="preserve">
+    <value>The server started at {0}.</value>
   </data>
   <data name="tapPage_equipsett" xml:space="preserve">
     <value>Equip Setting</value>

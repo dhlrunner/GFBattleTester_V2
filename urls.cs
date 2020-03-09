@@ -54,4 +54,11 @@
     public static string TheaterBossBattle = "/index.php/1001/Theater/bossBattle";
     public static string ChangeGamesettings = "/index.php/1001/Index/gameSetting";
     public static string GetgundevelopCollectList = "/index.php/1001/Gun/developCollectList";
+    public static string Getfriendlist = "/index.php/1001/Friend/list";
+    public static string Getfriendapplylist = "/index.php/1001/Friend/applylist";
+    public static string Getfriendmsglist = "/index.php/1001/Friend/messagelist";
+    public static string Getfriendmsg = "/index.php/1001/Friend/messageget";
+    public static string putMsg = "/index.php/1001/Friend/messageadd";
+    public static string getResourceinmail = "/index.php/1001/Index/getResourceInMail";
+    public static string gunoath = "/index.php/1001/Gun/contract";
 }

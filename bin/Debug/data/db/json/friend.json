@@ -1,0 +1,101 @@
+{
+    "list": [
+        {
+            "commander_info": {
+                "user_id": "20015",
+                "commander_emoji": "1",
+                "commander_title": "0",
+                "dressed": "1112:,1120:,1131:,1140:,1152:",
+                "preset1": "",
+                "preset2": "",
+                "preset3": "",
+                "preset4": "",
+                "fail_num": "0",
+                "gender": "2"
+            },
+            "f_userid": 20015,
+            "end_time": 0,
+            "name": "Command Line",
+            "lv": "999",
+            "headpic_id": "258",
+            "homepage_time": 1680344239,
+            "gun_collect": "0",
+            "furniture_collect": "0",
+            "gender": "2",
+            "is_return_user": 0
+        },
+        {
+            "commander_info": {
+                "user_id": "3",
+                "commander_emoji": "1",
+                "commander_title": "0",
+                "dressed": "1112:,1120:,1132:,1140:,1152:",
+                "preset1": "",
+                "preset2": "",
+                "preset3": "",
+                "preset4": "",
+                "fail_num": "0",
+                "gender": "2"
+            },
+            "f_userid": 3,
+            "end_time": 0,
+            "name": "Dummy",
+            "lv": "0",
+            "headpic_id": "0",
+            "homepage_time": 1,
+            "gun_collect": "207",
+            "furniture_collect": "518",
+            "gender": "2",
+            "is_return_user": 0
+        },
+        {
+            "commander_info": {
+                "user_id": "2",
+                "commander_emoji": "1",
+                "commander_title": "0",
+                "dressed": "1010:,1020:,1030:,1040:,1050:",
+                "preset1": "",
+                "preset2": "",
+                "preset3": "",
+                "preset4": "",
+                "fail_num": "0",
+                "gender": "0"
+            },
+            "f_userid": 2,
+            "end_time": 0,
+            "name": "Dummy",
+            "lv": "0",
+            "headpic_id": "0",
+            "homepage_time": "1",
+            "gun_collect": "124",
+            "furniture_collect": "205",
+            "gender": "0",
+            "is_return_user": 0
+        },
+        {
+            "commander_info": {
+                "user_id": "1",
+                "commander_emoji": "1",
+                "commander_title": "0",
+                "dressed": "1310:,1320:,1030:,1040:,1050:",
+                "preset1": "",
+                "preset2": "",
+                "preset3": "",
+                "preset4": "",
+                "fail_num": "0",
+                "gender": "0"
+            },
+            "f_userid": 1,
+            "end_time": 0,
+            "name": "Dummy",
+            "lv": "0",
+            "headpic_id": "0",
+            "homepage_time": "1",
+            "gun_collect": "251",
+            "furniture_collect": "435",
+            "gender": "0",
+            "is_return_user": 0
+        }
+       
+    ]
+}

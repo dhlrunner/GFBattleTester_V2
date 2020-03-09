@@ -1,1 +1,1 @@
-function FindProxyForURL(url, host) {if (dnsDomainIs(host, "gf-game.girlfrontline.co.kr")){return "PROXY 192.168.0.13";}else{ return "DIRECT";}}
+function FindProxyForURL(url, host) {if (dnsDomainIs(host, "gf-game.girlfrontline.co.kr")){return "PROXY 118.222.172.214:80";}else{ return "DIRECT";}}

@@ -286,7 +286,7 @@
     "construct_time": 3180,
     "uncraftable": true,
     "en_craftable": false,
-    "en_released":false,
+    "en_released": true,
     "artist": "REALMBW",
     "voice": "TBD",
     "name_skill1": "Embrace of the Dauntless",
@@ -664,7 +664,7 @@
           "stat":{
             "rof":[12,13,14,15,16,17,18,19,20,22]
           },
-          "duration":[5,6,6,6,7,7,7,8,8,8]
+          "duration":[5,5.3,5.7,6,6.3,6.7,7,7.3,7.7,8]
         }
       ]
     },
@@ -3967,7 +3967,7 @@
     "construct_time": 8280,
     "uncraftable": true,
     "en_craftable": false,
-    "en_released":false,
+    "en_released": true,
     "artist": "音符",
     "voice": "Haruka Takahashi",
     "name_skill1": "Repulsive Response",
@@ -14723,7 +14723,7 @@
     "construct_time": 15600,
     "uncraftable": true,
     "en_craftable": false,
-    "en_released":false,
+    "en_released": true,
     "artist": "Kincora",
     "voice": "Ayaka Fujii",
     "name_skill1": "Assault Focus T",
@@ -15215,7 +15215,7 @@
     "construct_time": 8280,
     "uncraftable": true,
     "en_craftable": false,
-    "en_released":false,
+    "en_released": true,
     "artist": "废人",
     "voice": "TBD",
     "name_skill1": "Concealment Focus",
@@ -15278,7 +15278,7 @@
     "construct_time": 15600,
     "uncraftable": true,
     "en_craftable": false,
-    "en_released":false,
+    "en_released": true,
     "artist": "黑猫桃园",
     "voice": "TBD",
     "name_skill1": "Rage Induced Inspirations",
@@ -15341,7 +15341,7 @@
     "construct_time": 12300,
     "uncraftable": true,
     "en_craftable": false,
-    "en_released":false,
+    "en_released": true,
     "artist": "工口牛",
     "voice": "TBD",
     "name_skill1": "Anti-Personnel Grenade N",
@@ -15486,7 +15486,7 @@
     "construct_time": 29160,
     "uncraftable": true,
     "en_craftable": false,
-    "en_released":false,
+    "en_released": true,
     "artist": "水熊",
     "voice": "TBD",
     "name_skill1": "Highway to Hell",
@@ -15602,7 +15602,7 @@
     "construct_time": 15600,
     "uncraftable": true,
     "en_craftable": false,
-    "en_released":false,
+    "en_released": true,
     "artist": "Redjuice",
     "voice": "TBD",
     "name_skill1": "Prophecy of a False God",
@@ -16176,7 +16176,7 @@
     "construct_time": 12000,
     "uncraftable": true,
     "en_craftable": false,
-    "en_released":false,
+    "en_released": true,
     "artist": "迷肘",
     "voice": "TBD",
     "name_skill1": "Elimination Focus",
@@ -18662,7 +18662,7 @@
     "construct_time": 12900,
     "uncraftable": true,
     "en_craftable": false,
-    "en_released":false,
+    "en_released": true,
     "artist": "ZAGALA",
     "voice": "Yukari Tamura",
     "name_skill1": "Anti-Personnel Grenade",
@@ -19340,7 +19340,7 @@
     "growth_rating": 130,
     "construct_time": 4200,
     "en_craftable": false,
-    "en_released":false,
+    "en_released": true,
     "artist": "Ki桑",
     "voice": "Asuka Ito",
     "name_skill1": "Cover Focus",
@@ -19539,7 +19539,7 @@
     "growth_rating": 110,
     "construct_time": 8100,
     "en_craftable": false,
-    "en_released":false,
+    "en_released": true,
     "artist": "ZAGALA",
     "voice": "Tomomi Mineuchi",
     "name_skill1": "Smoke Grenade",
@@ -23921,6 +23921,1110 @@
         "eva": 0,
         "rof": 0,
         "crit": 20,
+        "skillcd": 0,
+        "armor": 0
+      }
+    }
+  },
+  {
+    "id": 321,
+    "id_index": 297,
+    "aliases": ["Valmet Model 82"],
+    "api_name": "m82",
+    "spritesheet_row": 0,
+    "spritesheet_col": 0,
+    "name": "M82",
+    "rarity": 4,
+    "type": 4,
+    "mod": false,
+    "hp": 102,
+    "fp": 107,
+    "acc": 101,
+    "eva": 103,
+    "rof": 109,
+    "crit": 20,
+    "critdmg": 50,
+    "ap": 15,
+    "rounds": 0,
+    "armor": 0,
+    "growth_rating": 127,
+    "construct_time": 0,
+    "uncraftable": true,
+    "en_craftable": false,
+    "en_released":false,
+    "artist": "紅茶菌",
+    "voice": "TBD",
+    "name_skill1": "Charge Focus",
+    "icon_name_skill1": "powbuffself",
+    "tooltip_skill1": "Initial CD: 6s, CD: 16s<br>Increase self damage by 75% and rate of fire by 25% for 5 seconds",
+    "skill": {
+      "icd":6,
+      "cd":[20,19.6,19.1,18.7,18.2,17.8,17.3,16.9,16.4,16],
+      "effects": [
+        {
+          "type":"buff",
+          "target":"self",
+          "stat":{
+            "fp":[45,48,52,55,58,62,65,68,72,75],
+            "rof":[15,16,17,18,19,21,22,23,24,25]
+          },
+          "duration":[3,3.2,3.4,3.7,3.9,4.1,4.3,4.6,4.8,5]
+        }
+      ]
+    },
+    "tooltip_skill2": "",
+    "tooltip_tiles": "Accuracy +50%, Evasion +12%",
+    "tiles": {
+      "self": 23,
+      "target": "1,-9",
+      "target_type": 2,
+      "effect": {
+        "fp": 0,
+        "acc": 50,
+        "eva": 12,
+        "rof": 0,
+        "crit": 0,
+        "skillcd": 0,
+        "armor": 0
+      }
+    }
+  },
+  {
+    "id": 322,
+    "id_index": 295,
+    "aliases": ["Cháng Fēng chōng fēng qiāng"],
+    "api_name": "cf05",
+    "spritesheet_row": 0,
+    "spritesheet_col": 0,
+    "name": "CF05",
+    "rarity": 4,
+    "type": 2,
+    "mod": false,
+    "hp": 107,
+    "fp": 98,
+    "acc": 104,
+    "eva": 121,
+    "rof": 112,
+    "crit": 5,
+    "critdmg": 50,
+    "ap": 15,
+    "rounds": 0,
+    "armor": 0,
+    "growth_rating": 107,
+    "construct_time": 0,
+    "uncraftable": true,
+    "en_craftable": false,
+    "en_released":false,
+    "artist": "Lucient",
+    "voice": "TBD",
+    "name_skill1": "Butter Cream",
+    "icon_name_skill1": "buttercream",
+    "tooltip_skill1": "Initial CD: 5s, CD: 16s<br>Reduce damage taken per hit by 15 for 6 seconds",
+    "skill": {
+      "icd":5,
+      "cd":[20,19.6,19.1,18.7,18.2,17.8,17.3,16.9,16.4,16],
+      "effects": [
+        {
+          "type":"buff",
+          "target":"self",
+          "buttercream":[5,6,7,8,9,10,11,12,13,15],
+          "duration":[4,4.2,4.4,4.7,4.9,5.1,5.3,5.6,5.8,6]
+        }
+      ]
+    },
+    "tooltip_skill2": "",
+    "tooltip_tiles": "Damage +20%, Accuracy +25%",
+    "tiles": {
+      "self": 13,
+      "target": "-1,9,19",
+      "target_type": 4,
+      "effect": {
+        "fp": 20,
+        "acc": 25,
+        "eva": 0,
+        "rof": 0,
+        "crit": 0,
+        "skillcd": 0,
+        "armor": 0
+      }
+    }
+  },
+  {
+    "id": 323,
+    "id_index": 296,
+    "aliases": ["Heckler & Koch SL8"],
+    "api_name": "sl8",
+    "spritesheet_row": 0,
+    "spritesheet_col": 0,
+    "name": "SL8",
+    "rarity": 5,
+    "type": 3,
+    "mod": false,
+    "hp": 96,
+    "fp": 105,
+    "acc": 109,
+    "eva": 106,
+    "rof": 116,
+    "crit": 40,
+    "critdmg": 50,
+    "ap": 15,
+    "rounds": 0,
+    "armor": 0,
+    "growth_rating": 130,
+    "construct_time": 0,
+    "uncraftable": true,
+    "en_craftable": false,
+    "en_released":false,
+    "artist": "薯子Imoko",
+    "voice": "TBD",
+    "name_skill1": "Distant Waves",
+    "icon_name_skill1": "distantwaves",
+    "tooltip_skill1": "Initial CD: 5s, CD: 8s<br>Increase self rate of fire by 60% for 5 seconds. On skill activation, increase self damage by 5% per different doll class on her tiles. Max 3 stacks.",
+    "skill": {
+      "icd":5,
+      "cd":[10,9.8,9.6,9.3,9.1,8.9,8.7,8.4,8.2,8],
+      "effects": [
+        {
+          "type":"buff",
+          "target":"self",
+          "stat":{
+            "rof":[35,38,41,43,46,49,52,54,57,60]
+          },
+          "duration":[3,3.2,3.4,3.7,3.9,4.1,4.3,4.6,4.8,5]
+        },
+        {
+          "type":"buff",
+          "target":"self",
+          "stat":{
+            "fp":[3,3.2,3.4,3.7,3.9,4.1,4.3,4.6,4.8,5]
+          },
+          "duration":[3,3.2,3.4,3.7,3.9,4.1,4.3,4.6,4.8,5],
+          "stackable":true,
+          "name":"distantwaves",
+          "stacks":0,
+          "max_stacks":3
+        }
+      ]
+    },
+    "tooltip_skill2": "",
+    "tooltip_tiles": "Damage +10%, Evasion +18%",
+    "tiles": {
+      "self": 32,
+      "target": "-20,-10,-9,-8",
+      "target_type": 0,
+      "effect": {
+        "fp": 10,
+        "acc": 0,
+        "eva": 18,
+        "rof": 0,
+        "crit": 0,
+        "skillcd": 0,
+        "armor": 0
+      }
+    }
+  },
+  {
+    "id": 324,
+    "id_index": 291,
+    "aliases": ["Danuvia 43M"],
+    "api_name": "43m",
+    "spritesheet_row": 0,
+    "spritesheet_col": 0,
+    "name": "43M",
+    "rarity": 3,
+    "type": 2,
+    "mod": false,
+    "hp": 105,
+    "fp": 105,
+    "acc": 92,
+    "eva": 82,
+    "rof": 110,
+    "crit": 5,
+    "critdmg": 50,
+    "ap": 15,
+    "rounds": 0,
+    "armor": 0,
+    "growth_rating": 122,
+    "construct_time": 0,
+    "uncraftable": true,
+    "en_craftable": false,
+    "en_released":false,
+    "artist": "TAMAXI",
+    "voice": "TBD",
+    "name_skill1": "Cover Focus",
+    "icon_name_skill1": "dodgebuffself",
+    "tooltip_skill1": "Initial CD: 6s, CD: 8s<br>Increase self evasion by 120% for 5 seconds",
+    "skill": {
+      "icd":6,
+      "cd":[10,9.8,9.6,9.3,9.1,8.9,8.7,8.4,8.2,8],
+      "effects": [
+        {
+          "type":"buff",
+          "target":"self",
+          "stat":{
+            "eva":[65,71,77,83,89,96,102,108,114,120]
+          },
+          "duration":[3,3.2,3.4,3.7,3.9,4.1,4.3,4.6,4.8,5]
+        }
+      ]
+    },
+    "tooltip_skill2": "",
+    "tooltip_tiles": "Damage +12%, Evasion +10%",
+    "tiles": {
+      "self": 23,
+      "target": "9,-11",
+      "target_type": 4,
+      "effect": {
+        "fp": 12,
+        "acc": 0,
+        "eva": 10,
+        "rof": 0,
+        "crit": 0,
+        "skillcd": 0,
+        "armor": 0
+      }
+    }
+  },
+  {
+    "id": 325,
+    "id_index": 289,
+    "aliases": ["R5 Remington Gas Piston"],
+    "api_name": "r5",
+    "spritesheet_row": 0,
+    "spritesheet_col": 0,
+    "name": "R5",
+    "rarity": 5,
+    "type": 4,
+    "mod": false,
+    "hp": 112,
+    "fp": 119,
+    "acc": 126,
+    "eva": 101,
+    "rof": 112,
+    "crit": 20,
+    "critdmg": 50,
+    "ap": 15,
+    "rounds": 0,
+    "armor": 0,
+    "growth_rating": 122,
+    "construct_time": 0,
+    "uncraftable": true,
+    "en_craftable": false,
+    "en_released":false,
+    "artist": "音符",
+    "voice": "TBD",
+    "name_skill1": "Damage Focus T",
+    "icon_name_skill1": "powbuffself",
+    "tooltip_skill1": "Initial CD: 4s, CD: 16s<br>Increase self damage by 75% for 10 seconds",
+    "skill": {
+      "icd":4,
+      "cd":[20,19.6,19.1,18.7,18.2,17.8,17.3,16.9,16.4,16],
+      "effects": [
+        {
+          "type":"buff",
+          "target":"self",
+          "stat":{
+            "fp":[45,48,52,55,58,62,65,68,72,75]
+          },
+          "duration":[6,6.4,6.8,7.2,7.6,8,8.4,8.8,9.4,10]
+        }
+      ]
+    },
+    "tooltip_skill2": "",
+    "tooltip_tiles": "Rate of fire +12%, Evasion +15%",
+    "tiles": {
+      "self": 23,
+      "target": "-9,11",
+      "target_type": 2,
+      "effect": {
+        "fp": 0,
+        "acc": 0,
+        "eva": 15,
+        "rof": 12,
+        "crit": 0,
+        "skillcd": 0,
+        "armor": 0
+      }
+    }
+  },
+  {
+    "id": 326,
+    "id_index": 286,
+    "aliases": ["Knights Armament Company PDW"],
+    "api_name": "kacpdw",
+    "spritesheet_row": 0,
+    "spritesheet_col": 0,
+    "name": "KAC-PDW",
+    "rarity": 4,
+    "type": 2,
+    "mod": false,
+    "hp": 102,
+    "fp": 126,
+    "acc": 115,
+    "eva": 117,
+    "rof": 104,
+    "crit": 5,
+    "critdmg": 50,
+    "ap": 15,
+    "rounds": 0,
+    "armor": 0,
+    "growth_rating": 107,
+    "construct_time": 8400,
+    "en_craftable": false,
+    "en_released":false,
+    "artist": "山药",
+    "voice": "TBD",
+    "name_skill1": "D-Fense",
+    "icon_name_skill1": "dfense",
+    "tooltip_skill1": "Initial CD: 6s, CD: 8s<br>Remove all debuffs from self and gain a force shield for 1 second. When shield expires, increase self evasion by 60% for 5 seconds",
+    "skill": {
+      "icd":6,
+      "cd":[10,9.8,9.6,9.3,9.1,8.9,8.7,8.4,8.2,8],
+      "effects": [
+        {
+          "type":"modifySkill",
+          "modifySkill":"clearDebuffs"
+        },
+        {
+          "type":"smoke",
+          "busylinks":0,
+          "delay":1,
+          "after":[
+            {
+              "type":"buff",
+              "target":"self",
+              "stat":{
+                "eva":[30,33,37,40,43,47,50,53,57,60]
+              },
+              "duration":[3,3.2,3.4,3.7,3.9,4.1,4.3,4.6,4.8,5]
+            }
+          ]
+        }
+      ]
+    },
+    "tooltip_skill2": "",
+    "tooltip_tiles": "Damage +15%, Accuracy +30%",
+    "tiles": {
+      "self": 23,
+      "target": "-1,-11",
+      "target_type": 4,
+      "effect": {
+        "fp": 15,
+        "acc": 30,
+        "eva": 0,
+        "rof": 0,
+        "crit": 0,
+        "skillcd": 0,
+        "armor": 0
+      }
+    }
+  },
+  {
+    "id": 327,
+    "id_index": 292,
+    "aliases": ["Ruchnoy Pulemyot Kalashnikova 2016"],
+    "api_name": "rpk16",
+    "spritesheet_row": 0,
+    "spritesheet_col": 0,
+    "name": "RPK-16",
+    "rarity": 5,
+    "type": 5,
+    "mod": false,
+    "hp": 100,
+    "fp": 94,
+    "acc": 127,
+    "eva": 124,
+    "rof": 114,
+    "crit": 5,
+    "critdmg": 50,
+    "ap": 15,
+    "rounds": 10,
+    "armor": 0,
+    "growth_rating": 140,
+    "construct_time": 22560,
+    "en_craftable": false,
+    "en_released":false,
+    "artist": "多元菌",
+    "voice": "TBD",
+    "name_skill1": "Cunning Silver Fox",
+    "icon_name_skill1": "cunningsilverfox",
+    "tooltip_skill1": "Initial CD: 8s, CD: 18s<br>Passive: When out of ammo, enter AR mode, reducing self rate of fire by 40% while increasing self accuracy by 100% and movement speed by 150%. <br>Active: Reload and switch back to MG mode. Reloading takes 1 second and clears all buffs from AR Mode while increasing self damage by 40% for 5 seconds",
+    "skill": {
+      "icd":8,
+      "cd":[18,18,18,18,18,18,18,18,18,18],
+      "effects": [
+        {
+          "type":"removeBuff",
+          "target":"self",
+          "name":"ARmode"
+        },
+        {
+          "type":"modifySkill",
+          "modifySkill":"switchtoMGmode"
+        },
+        {
+          "type":"buff",
+          "target":"self",
+          "stat":{
+            "fp":[20,22,24,27,29,31,33,36,38,40]
+          },
+          "duration":[3,3.2,3.4,3.7,3.9,4.1,4.3,4.6,4.8,5]
+        }
+      ]
+    },
+    "passives": [
+      {
+        "type":"passive",
+        "trigger":"outOfAmmo",
+        "effects":[
+          {
+            "type":"buff",
+            "target":"self",
+            "name":"ARmode",
+            "stat":{
+              "rof":-40,
+              "acc":[50,56,61,67,72,78,83,89,94,100],
+              "movespeed":150
+            },
+            "duration":-1
+          }
+        ]
+      }
+    ],
+    "tooltip_skill2": "",
+    "tooltip_tiles": "Damage +12%, Armor +18%",
+    "tiles": {
+      "self": 12,
+      "target": "10,11,12,2,20",
+      "target_type": [2, 4, 6],
+      "effect": {
+        "fp": 12,
+        "acc": 0,
+        "eva": 0,
+        "rof": 0,
+        "crit": 0,
+        "skillcd": 0,
+        "armor": 18
+      }
+    }
+  },
+  {
+    "id": 328,
+    "id_index": 294,
+    "aliases": ["Webley 'WG' Army Model"],
+    "api_name": "webley",
+    "spritesheet_row": 0,
+    "spritesheet_col": 0,
+    "name": "Webley",
+    "rarity": 5,
+    "type": 1,
+    "mod": false,
+    "hp": 130,
+    "fp": 94,
+    "acc": 117,
+    "eva": 96,
+    "rof": 101,
+    "crit": 20,
+    "critdmg": 50,
+    "ap": 15,
+    "rounds": 0,
+    "armor": 0,
+    "growth_rating": 137,
+    "construct_time": 0,
+    "en_craftable": false,
+    "en_released":false,
+    "uncraftable":true,
+    "artist": "Silverwing",
+    "voice": "TBD",
+    "name_skill1": "Consecutive Order",
+    "icon_name_skill1": "consecutiveorder",
+    "tooltip_skill1": "Initial CD: 6s, CD: 12s<br>If Webley is the echelon leader, increase all allies' damage by 25% for 8 seconds. If another doll is the leader, increase that doll's damage and rate of fire by 22% for 8 seconds and reduce that doll's current remaining skill cooldown by 25%",
+    "skill": {
+      "icd":6,
+      "cd":[15,14.7,14.3,14,13.7,13.3,13,12.7,12.3,12],
+      "effects": [
+        {
+          "type":"buff",
+          "target":"all",
+          "stat":{
+            "fp":[15,16,17,18,19,21,22,23,24,25]
+          },
+          "duration":[5,5.3,5.7,6,6.3,6.7,7,7.3,7.7,8]
+        },
+        {
+          "type":"buff",
+          "target":"leader",
+          "stat":{
+            "fp":[10,11,13,14,15,17,18,19,21,22],
+            "rof":[10,11,13,14,15,17,18,19,21,22]
+          },
+          "duration":[5,5.3,5.7,6,6.3,6.7,7,7.3,7.7,8]
+        },
+        {
+          "type":"modifySkill",
+          "modifySkill":"reduceLeaderCD"
+        }
+      ]
+    },
+    "tooltip_skill2": "",
+    "tooltip_tiles": "Damage +16%, Rate of Fire +20%",
+    "tiles": {
+      "self": 33,
+      "target": "-1,-11,-21,-10,1",
+      "target_type": 0,
+      "effect": {
+        "fp": [
+          8,
+          16
+        ],
+        "acc": [
+          0,
+          0
+        ],
+        "eva": [
+          0,
+          0
+        ],
+        "rof": [
+          10,
+          20
+        ],
+        "crit": [
+          0,
+          0
+        ],
+        "skillcd": [
+          0,
+          0
+        ],
+        "armor": [
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "id": 329,
+    "id_index": 31,
+    "aliases": ["Moschetto Automatico Beretta Modello 1938","Beretta Automatic Musket Model 1938"],
+    "api_name": "mab38mod",
+    "spritesheet_row": 0,
+    "spritesheet_col": 0,
+    "name": "M38Mod",
+    "rarity": 4,
+    "type": 2,
+    "mod": true,
+    "hp": 120,
+    "fp": 125,
+    "acc": 95,
+    "eva": 94,
+    "rof": 100,
+    "crit": 5,
+    "critdmg": 50,
+    "ap": 15,
+    "rounds": 0,
+    "armor": 0,
+    "growth_rating": 110,
+    "construct_time": 5400,
+    "en_craftable": false,
+    "en_released": false,
+    "artist": "ALLENES",
+    "voice": "Haruka Takahashi",
+    "name_skill1": "Stun Grenade",
+    "icon_name_skill1": "flashbomb",
+    "tooltip_skill1": "Initial CD: 5s, CD: 16s<br>Launch a stun grenade that stuns enemies within a radius of 2.5 units for 4 seconds",
+    "skill": {
+      "icd":5,
+      "cd":[20,19.6,19.1,18.7,18.2,17.8,17.3,16.9,16.4,16],
+      "effects": [
+        {
+          "type":"stun",
+          "busylinks":1,
+          "delay":1.5,
+          "after":[
+            {
+              "type":"buff",
+              "target":"enemy",
+              "stun":true,
+              "duration":[2.2,2.4,2.6,2.8,3,3.2,3.4,3.6,3.8,4]
+            }
+          ],
+          "requirements":{
+            "boss":false
+          }
+        }
+      ]
+    },
+    "name_skill2": "Scarlet Flame Pursuit",
+    "icon_name_skill2": "napalm",
+    "tooltip_skill2": "Passive: Along with the stun grenade, launch an incendiary grenade that deals 2.8x damage to enemies within a 2.5 unit radius and leaves a DoT that deals 0.6x damage every 0.33 seconds for 4 seconds in a 2.5 unit radius",
+    "skill2": {
+      "icd":5,
+      "cd":[20,19.6,19.1,18.7,18.2,17.8,17.3,16.9,16.4,16],
+      "effects": [
+        {
+          "type":"grenade",
+          "busylinks":0,
+          "multiplier":[1.4,1.56,1.71,1.87,2.02,2.18,2.33,2.49,2.64,2.8],
+          "radius":2.5,
+          "delay":1.5,
+          "after":{
+            "type":"grenadedot",
+            "multiplier":[0.3,0.33,0.37,0.4,0.43,0.47,0.5,0.53,0.57,0.6],
+            "radius":2.5,
+            "duration":[2,2.2,2.4,2.7,2.9,3.1,3.3,3.6,3.8,4],
+            "tick":10
+          }
+        }
+      ]
+    },
+    "tooltip_tiles": "Damage +8%, Rate of fire +10%",
+    "tiles": {
+      "self": 23,
+      "target": "-11,9",
+      "target_type": [4, 3],
+      "effect": {
+        "fp": 8,
+        "acc": 0,
+        "eva": 0,
+        "rof": 10,
+        "crit": 0,
+        "skillcd": 0,
+        "armor": 0
+      }
+    }
+  },
+  {
+    "id": 330,
+    "id_index": 7,
+    "aliases": ["Avtomaticheskiy Pistolet Stechkina"],
+    "api_name": "apsmod",
+    "spritesheet_row": 0,
+    "spritesheet_col": 0,
+    "name": "StechkinMod",
+    "rarity": 5,
+    "type": 1,
+    "mod": true,
+    "hp": 125,
+    "fp": 115,
+    "acc": 105,
+    "eva": 95,
+    "rof": 125,
+    "crit": 20,
+    "critdmg": 50,
+    "ap": 15,
+    "rounds": 0,
+    "armor": 0,
+    "growth_rating": 110,
+    "construct_time": 3300,
+    "en_craftable": false,
+    "en_released": false,
+    "artist": "春_日",
+    "voice": "Eri Kitamura",
+    "name_skill1": "Assault Command",
+    "icon_name_skill1": "ratebuff",
+    "tooltip_skill1": "Initial CD: 6s, CD:12s<br>Increase all allies' rate of fire by 25% for 8 seconds. When 'Stechkin Exclusive Stock is equipped, adds bonus effect to skill: Increase all allies' damage by 4%",
+    "skill": {
+      "icd":6,
+      "cd":[15,14.7,14.3,14,13.7,13.3,13,12.7,12.3,12],
+      "effects": [
+        {
+          "type":"buff",
+          "target":"all",
+          "stat":{
+            "rof":[12,13,14,15,16,17,18,19,20,22]
+          },
+          "duration":[5,5.3,5.7,6,6.3,6.7,7,7.3,7.7,8]
+        }
+      ]
+    },
+    "name_skill2": "Percussion",
+    "icon_name_skill2": "percussion",
+    "tooltip_skill2": "Passive: When skill1 activates, increase self damage by 25% and crit rate by 100% for 8 seconds. While active, target enemies with the lowest hp and reduce the evasion of enemies with less than 30% hp left by 50% for 8 seconds",
+    "skill2": {
+      "icd":6,
+      "cd":[15,14.7,14.3,14,13.7,13.3,13,12.7,12.3,12],
+      "effects": [
+        {
+          "type":"buff",
+          "target":"self",
+          "stat":{
+            "fp":[15,16,17,18,19,21,22,23,24,25],
+            "crit":[50,56,61,67,72,78,83,89,94,100]
+          },
+          "duration":[5,5.3,5.7,6,6.3,6.7,7,7.3,7.7,8]
+        },
+        {
+          "type":"buff",
+          "target":"enemy",
+          "stat":{
+            "eva":[-20,-23,-27,-30,-33,-37,-40,-43,-47,-50]
+          },
+          "duration":[5,5.3,5.7,6,6.3,6.7,7,7.3,7.7,8]
+        }
+      ]
+    },
+    "skill_control":true,
+    "tooltip_tiles": "Damage +16%, Rate of fire +24%",
+    "tiles": {
+      "self": 23,
+      "target": "10,-10,-9,11",
+      "target_type": 0,
+      "effect": {
+        "fp": [
+          8,
+          16
+        ],
+        "acc": [
+          0,
+          0
+        ],
+        "eva": [
+          0,
+          0
+        ],
+        "rof": [
+          12,
+          24
+        ],
+        "crit": [
+          0,
+          0
+        ],
+        "skillcd": [
+          0,
+          0
+        ],
+        "armor": [
+          0,
+          0
+        ]
+      }
+    }
+  },
+  {
+    "id": 331,
+    "id_index": 287,
+    "aliases": ["SIG 556"],
+    "api_name": "sig556",
+    "spritesheet_row": 0,
+    "spritesheet_col": 0,
+    "name": "SIG-556",
+    "rarity": 5,
+    "type": 4,
+    "mod": false,
+    "hp": 110,
+    "fp": 113,
+    "acc": 112,
+    "eva": 109,
+    "rof": 114,
+    "crit": 5,
+    "critdmg": 50,
+    "ap": 15,
+    "rounds": 0,
+    "armor": 0,
+    "growth_rating": 117,
+    "construct_time": 14160,
+    "en_craftable": false,
+    "en_released":false,
+    "artist": "水熊",
+    "voice": "TBD",
+    "name_skill1": "Battlefield Wave",
+    "icon_name_skill1": "battlefieldwave",
+    "tooltip_skill1": "Initial CD: 5s, CD: 4s<br>Activate to switch between active and inactive effect. Active: Increase self rate of fire to max and increase damage by 50%. Each attack adds 1 stack of Overload.<br>Inactive: Each attack removes 1 stack of Overload.<br>Passive:When number of Overload stacks reaches 12, clear all stacks and stun self for 2 seconds.",
+    "skill": {
+      "icd":5,
+      "cd":[4,4,4,4,4,4,4,4,4,4],
+      "effects": [
+        {
+          "type":"modifySkill",
+          "modifySkill":"toggleSkill"
+        }
+      ]
+    },
+    "passives": [
+      {
+        "type":"passive",
+        "trigger":"normalAttack",
+        "name":"battlefieldwave",
+        "effects":[
+          {
+            "type":"buff",
+            "target":"self",
+            "name":"overload",
+            "stackable": true,
+            "max_stacks":12,
+            "stacks":0,
+            "stacksToAdd":-1,
+            "duration":-1
+          }
+        ]
+      },
+      {
+        "type":"passive",
+        "trigger":"hasStacks",
+        "name":"overload",
+        "stacksRequired":12,
+        "effects":[
+          {
+            "type":"buff",
+            "target":"self",
+            "stun":true,
+            "duration":2
+          },
+          {
+            "type":"buff",
+            "target":"self",
+            "name":"overload",
+            "stackable": true,
+            "max_stacks":12,
+            "stacks":0,
+            "stacksToAdd":-12,
+            "duration":-1
+          },
+          {
+            "type":"modifySkill",
+            "modifySkill":"toggleSkill"
+          }
+        ]
+      }
+    ],
+    "tooltip_skill2": "",
+    "tooltip_tiles": "Evasion +15%, Rate of fire +12%",
+    "tiles": {
+      "self": 23,
+      "target": "1,-9",
+      "target_type": 2,
+      "effect": {
+        "fp": 0,
+        "acc": 0,
+        "eva": 15,
+        "rof": 12,
+        "crit": 0,
+        "skillcd": 0,
+        "armor": 0
+      }
+    }
+  },
+  {
+    "id": 332,
+    "id_index": 293,
+    "aliases": ["Avtomat Kalashnikova (Automatic Kalashnikov) 2015"],
+    "api_name": "ak15",
+    "spritesheet_row": 0,
+    "spritesheet_col": 0,
+    "name": "AK-15",
+    "rarity": 5,
+    "type": 4,
+    "mod": false,
+    "hp": 100,
+    "fp": 115,
+    "acc": 109,
+    "eva": 107,
+    "rof": 109,
+    "crit": 20,
+    "critdmg": 50,
+    "ap": 15,
+    "rounds": 0,
+    "armor": 0,
+    "growth_rating": 138,
+    "construct_time": 15300,
+    "en_craftable": false,
+    "en_released":false,
+    "artist": "多元菌",
+    "voice": "TBD",
+    "name_skill1": "White Mastiff's Eye",
+    "icon_name_skill1": "whitemastiffseye",
+    "tooltip_skill1": "Initial CD: 6s, CD: 8s<br>Active: Apply [Monitoring] to all enemies for up to 6 seconds. When attacking an enemy with [Monitoring], increase self damage, accuracy, and crit rate by 40%. When being attacked by an enemy with [Monitoring], increase self evasion by 40%. When [Monitoring] is applied, gain 1 stack of [Overload] per enemy affected. Additionally, gain 5 stacks of [Overload] every 2 seconds while [Monitoring] is active. Upon reaching 24 stacks of [Overload], clear all stacks of [Overload], remove [Monitoring] from all enemies, and decrease self rate of fire and accuracy by 20% for 5 seconds. Skill cannot be activated while this debuff is active.<br>Passive: Each attack has a 15% chance of triggering [Anger]. [Anger]: Increase self damage by 40% for 3 seconds.",
+    "skill": {
+      "icd":6,
+      "cd":[10,9.8,9.6,9.3,9.1,8.9,8.7,8.4,8.2,8],
+      "effects": [
+        {
+          "type":"buff",
+          "target":"self",
+          "name":"Monitoring",
+          "stat":{
+            "fp":[20,22,24,27,29,31,33,36,38,40],
+            "acc":[20,22,24,27,29,31,33,36,38,40],
+            "crit":[20,22,24,27,29,31,33,36,38,40],
+            "eva":[20,22,24,27,29,31,33,36,38,40]
+          },
+          "duration":6,
+          "after": [
+            {
+              "type":"removePassive",
+              "target":"self",
+              "name":"overloadpassive"
+            }
+          ]
+        },
+        {
+          "type":"buff",
+          "target":"self",
+          "name":"overload",
+          "stackable": true,
+          "max_stacks":99,
+          "stacks":0,
+          "stacksToAdd":1,
+          "duration":-1
+        },
+        {
+          "type":"passive",
+          "trigger":"time",
+          "interval":2,
+          "name":"overloadpassive",
+          "effects":[
+            {
+              "type":"buff",
+              "target":"self",
+              "name":"overload",
+              "stackable": true,
+              "max_stacks":99,
+              "stacks":0,
+              "stacksToAdd":5,
+              "duration":-1
+            }
+          ]
+        }
+      ]
+    },
+    "passives": [
+      {
+        "type":"passive",
+        "trigger":"normalAttack",
+        "effects":[
+          {
+            "type":"buff",
+            "name":"anger",
+            "target":"self",
+            "stat":{
+              "fp":[20,22,24,27,29,31,33,36,38,40]
+            },
+            "duration":3,
+            "stackable":true,
+            "stacks":1,
+            "max_stacks":1,
+            "stackChance":15
+          }
+        ]
+      },
+      {
+        "type":"passive",
+        "trigger":"hasStacks",
+        "name":"overload",
+        "stacksRequired":[18,18,18,20,20,20,22,22,22,24],
+        "effects":[
+          {
+            "type":"removeBuff",
+            "target":"self",
+            "name":"Monitoring"
+          },
+          {
+            "type":"removePassive",
+            "target":"self",
+            "name":"overloadpassive"
+          },
+          {
+            "type":"buff",
+            "target":"self",
+            "name":"overload",
+            "stackable": true,
+            "max_stacks":99,
+            "stacks":0,
+            "stacksToAdd":-99,
+            "duration":-1
+          },
+          {
+            "type":"buff",
+            "target":"self",
+            "name":"cooldown",
+            "stat":{
+              "rof":-20,
+              "acc":-20
+            },
+            "duration":5
+          }
+        ]
+      }
+    ],
+    "tooltip_skill2": "",
+    "tooltip_tiles": "Damage +25%, Accuracy +65%",
+    "tiles": {
+      "self": 23,
+      "target": "1,-9,11",
+      "target_type": 2,
+      "effect": {
+        "fp": 25,
+        "acc": 65,
+        "eva": 0,
+        "rof": 0,
+        "crit": 0,
+        "skillcd": 0,
+        "armor": 0
+      }
+    }
+  },
+  {
+    "id": 333,
+    "id_index": 298,
+    "aliases": ["Вепр (Vepr)"],
+    "api_name": "vepr",
+    "spritesheet_row": 0,
+    "spritesheet_col": 0,
+    "name": "Vepr",
+    "rarity": 3,
+    "type": 4,
+    "mod": false,
+    "hp": 100,
+    "fp": 103,
+    "acc": 115,
+    "eva": 110,
+    "rof": 105,
+    "crit": 20,
+    "critdmg": 50,
+    "ap": 15,
+    "rounds": 0,
+    "armor": 0,
+    "growth_rating": 122,
+    "construct_time": 0,
+    "uncraftable": true,
+    "en_craftable": false,
+    "en_released":false,
+    "artist": "牙牙",
+    "voice": "TBD",
+    "name_skill1": "Steel Blue Timpani",
+    "icon_name_skill1": "powbuff",
+    "tooltip_skill1": "Initial CD: 6s, CD: 16s<br>Increase damage, accuracy, and rate of fire of dolls on her tiles by 22% for 5 seconds",
+    "skill": {
+      "icd":6,
+      "cd":[20,19.6,19.1,18.7,18.2,17.8,17.3,16.9,16.4,16],
+      "effects": [
+        {
+          "type":"buff",
+          "target":"tiles",
+          "stat":{
+            "fp":[12,13,14,15,16,18,19,20,21,22],
+            "acc":[12,13,14,15,16,18,19,20,21,22],
+            "rof":[12,13,14,15,16,18,19,20,21,22]
+          },
+          "duration":[3,3.2,3.4,3.7,3.9,4.1,4.3,4.6,4.8,5]
+        }
+      ]
+    },
+    "tooltip_skill2": "",
+    "tooltip_tiles": "Damage +16%",
+    "tiles": {
+      "self": 23,
+      "target": "10,-10",
+      "target_type": 4,
+      "effect": {
+        "fp": 16,
+        "acc": 0,
+        "eva": 0,
+        "rof": 0,
+        "crit": 0,
         "skillcd": 0,
         "armor": 0
       }

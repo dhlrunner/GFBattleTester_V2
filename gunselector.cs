@@ -287,5 +287,10 @@ namespace GFBattleTester_v2
                 stat_inteamlocation.Enabled = true;
             }
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
