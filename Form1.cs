@@ -19,6 +19,9 @@ namespace GFBattleTester_v2
 {
     public partial class Form1 : Form
     {
+        JObject enemy_team_info = new JObject();
+        JObject enemy_character_info = new JObject();
+        List<string> mission_name_list = new List<string>();
         public string signkey = "우중비모";
         private Thread DaemonThread;
         private ServerProcess httpServer;
@@ -48,6 +51,8 @@ namespace GFBattleTester_v2
         public int[] gun_position = { 0, 7, 12, 17, 8, 13, 18, 9, 14, 19 };
         public List<string> gunNameCsv = new List<string>();
         public List<int> GeneratedgunIDs = new List<int>();
+        BindingSource bs = new BindingSource();
+        
         public Form1()
         {
             frm = this;
@@ -115,6 +120,12 @@ namespace GFBattleTester_v2
         private void Form1_Load(object sender, EventArgs e)
         {
             
+            string mission = File.ReadAllText("data/db/csv/mission.b64");
+            // mission = Encoding.UTF8.GetString(Convert.FromBase64String(mission));
+            mission_name_list = mission.Split('\n').ToList();
+            JObject spotinfo = JObject.Parse(File.ReadAllText(@"data/db/json/spot_info.json"));
+            enemy_team_info = JObject.Parse(File.ReadAllText(@"data/db/json/enemy_team_info.json"));
+            enemy_character_info = JObject.Parse(File.ReadAllText(@"data/db/json/enemy_character_type_info.json"));
             server_togglebtn.Text = Properties.Strings.serverstart;
             tabControl1.TabPages["informationpage"].Text = Properties.Strings.tapPage_info;
             tabControl1.TabPages["dollsettingpage"].Text = Properties.Strings.tapPage_gunsett;
@@ -133,6 +144,7 @@ namespace GFBattleTester_v2
             JArray userdata_guninfo = JArray.Parse(userdata["gun_with_user_info"].ToString());
             gundb = JArray.Parse(File.ReadAllText("data/db/json/dolls.json"));
             gundb.Merge(JArray.Parse(File.ReadAllText("data/db/json/dolls_missing.json")));
+            enemy_list_gridview.Columns[0].ValueType = typeof(int);
             foreach (string name in gunNameCsv)
             {
                 string[] t = name.Split(',');
@@ -149,6 +161,75 @@ namespace GFBattleTester_v2
             }
             MicaSecurityTools.init();
             server_status_text.Text = "停止";
+            #region datagridview 전역/적 정보 리스트 추가 부분
+            foreach (var item in enemy_team_info)
+            {
+                string enemyID = enemy_team_info[item.Key]["id"].ToString();
+                string enemyLeaderID = enemy_team_info[enemyID]["enemy_leader"].ToString();
+
+                //string membernames = string.Empty;
+                JArray a = JArray.Parse(enemy_team_info[enemyID]["member_ids"].ToString());
+                if (enemyLeaderID != "0")
+                {
+                    /*
+                    for(int i=0; i<a.Count; i++)
+                    {
+                        string id = a[i].ToString();
+                        if(enemy_character_info.ContainsKey(id))
+                        {
+                            if (i == a.Count - 1)
+                                membernames += enemy_character_info[id]["code"].ToString();
+                            else
+                                membernames += enemy_character_info[id]["code"].ToString() + ",";
+                        }
+                        else
+                        {
+                            if (i == a.Count - 1)
+                                membernames += id;
+                            else
+                                membernames += id + ",";
+                        }
+
+                    }*/
+                    string missionspotname = string.Empty;
+                    if (int.Parse(enemy_team_info[enemyID]["spot_id"].ToString()) > 0)
+                    {
+                        missionspotname = CodeToMissionName(int.Parse(spotinfo[enemy_team_info[enemyID]["spot_id"].ToString()]["mission_id"].ToString()));
+                    }
+                    else
+                        missionspotname = "-";
+                    string[] enemyinfo = { enemyID, enemy_character_info[enemyLeaderID]["code"].ToString(), enemy_character_info[enemyLeaderID]["boss_hp"].ToString(),
+                         enemy_character_info[enemyLeaderID]["maxlife"].ToString(),missionspotname/*membernames*/};
+                    enemy_list_gridview.Rows.Add(enemyinfo);
+                    
+                }
+                //enemyGrpID.Add(enemyID);
+                //enemy_team_id_combobox.Items.Add(enemyID);
+
+
+            }
+            bs.DataSource = enemy_list_gridview.DataSource;
+            #endregion
+        }
+        public string CodeToMissionName(int code)
+        {
+            string name = string.Empty;
+            for (int i = 0; i < mission_name_list.Count(); i++)
+            {
+                string temp = mission_name_list[i].Split('-')[1];
+
+                if (temp.Substring(0, 1) != "2")
+                {
+                    int c = int.Parse(temp.Split(',')[0].Substring(1));
+                    if (c == code)
+                    {
+                        name = temp.Split(',')[1];
+                        return name;
+                    }
+                }
+
+            }
+            return "-";
         }
         private void ListView1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -625,6 +706,38 @@ namespace GFBattleTester_v2
         {
             paceditform edit = new paceditform();
             edit.Show();
+        }
+
+        private void enemysearchtextBox_TextChanged(object sender, EventArgs e)
+        {
+            
+             if (enemysearchtextBox.Text.Length > 0)
+             {
+                //(enemy_list_gridview.DataSource as DataTable).DefaultView.RowFilter = string.Format("Leader = '{0}'", enemysearchtextBox.Text);
+                //string rowFilter = string.Format("OR [{0}] = '{1}'", enemy_list_gridview.Columns[1].HeaderText, enemysearchtextBox.Text);
+                //(enemy_list_gridview.DataSource as DataTable).DefaultView.RowFilter = rowFilter;
+                bs.Filter = string.Format("{0} LIKE '%{1}%'", enemy_list_gridview.Columns[1].HeaderText, enemysearchtextBox.Text);
+                enemy_list_gridview.DataSource = bs;
+
+            }
+             else if(enemysearchtextBox.Text.Length == 0){
+                 // bs.DataSource = enemy_list_gridview.DataSource;
+                 bs.RemoveFilter();
+                 enemy_list_gridview.DataSource = bs;
+             }
+            
+
+        }
+
+        private void enemy_list_gridview_SortCompare(object sender, DataGridViewSortCompareEventArgs e)
+        {
+            if(e.Column.Index != 1 && e.Column.Index != 4)
+            {
+                int a = int.Parse(e.CellValue1.ToString()), b = int.Parse(e.CellValue2.ToString());
+                e.SortResult = a.CompareTo(b);
+                e.Handled = true;
+            }
+           
         }
     }
   

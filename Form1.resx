@@ -150,6 +150,126 @@
   <data name="tabControl1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 9</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>508, 260</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
+    <value>informationpage</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 345</value>
+  </data>
+  <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="textBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Name" xml:space="preserve">
+    <value>textBox1</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;textBox1.Parent" xml:space="preserve">
+    <value>informationpage</value>
+  </data>
+  <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="enemysearchtextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>520, 9</value>
+  </data>
+  <data name="enemysearchtextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>293, 23</value>
+  </data>
+  <data name="enemysearchtextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;enemysearchtextBox.Name" xml:space="preserve">
+    <value>enemysearchtextBox</value>
+  </data>
+  <data name="&gt;&gt;enemysearchtextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;enemysearchtextBox.Parent" xml:space="preserve">
+    <value>informationpage</value>
+  </data>
+  <data name="&gt;&gt;enemysearchtextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="enemy_list_gridview.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <metadata name="enemy_group_id.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="enemy_group_id.HeaderText" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <metadata name="enemy_leader.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="enemy_leader.HeaderText" xml:space="preserve">
+    <value>Leader</value>
+  </data>
+  <metadata name="enemy_bosshp.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="enemy_bosshp.HeaderText" xml:space="preserve">
+    <value>Boss HP</value>
+  </data>
+  <metadata name="enemy_leaderhp.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="enemy_leaderhp.HeaderText" xml:space="preserve">
+    <value>Leader HP</value>
+  </data>
+  <metadata name="mission_name.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="mission_name.HeaderText" xml:space="preserve">
+    <value>Mission Name</value>
+  </data>
+  <data name="enemy_list_gridview.Location" type="System.Drawing.Point, System.Drawing">
+    <value>520, 38</value>
+  </data>
+  <data name="enemy_list_gridview.Size" type="System.Drawing.Size, System.Drawing">
+    <value>597, 524</value>
+  </data>
+  <data name="enemy_list_gridview.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;enemy_list_gridview.Name" xml:space="preserve">
+    <value>enemy_list_gridview</value>
+  </data>
+  <data name="&gt;&gt;enemy_list_gridview.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;enemy_list_gridview.Parent" xml:space="preserve">
+    <value>informationpage</value>
+  </data>
+  <data name="&gt;&gt;enemy_list_gridview.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="informationpage.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 24</value>
   </data>
@@ -160,7 +280,7 @@
     <value>3, 4, 3, 4</value>
   </data>
   <data name="informationpage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1123, 495</value>
+    <value>1123, 569</value>
   </data>
   <data name="informationpage.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -214,7 +334,7 @@
     <value>3, 4, 3, 4</value>
   </data>
   <data name="dollsettingpage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1123, 495</value>
+    <value>1123, 569</value>
   </data>
   <data name="dollsettingpage.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -241,7 +361,7 @@
     <value>3, 4, 3, 4</value>
   </data>
   <data name="equipsettingpage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1123, 495</value>
+    <value>1123, 569</value>
   </data>
   <data name="equipsettingpage.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -268,7 +388,7 @@
     <value>3, 4, 3, 4</value>
   </data>
   <data name="fairysettingpage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1123, 495</value>
+    <value>1123, 569</value>
   </data>
   <data name="fairysettingpage.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -288,18 +408,6 @@
   <data name="&gt;&gt;fairysettingpage.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="editpacbutton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 280</value>
-  </data>
-  <data name="editpacbutton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 23</value>
-  </data>
-  <data name="editpacbutton.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="editpacbutton.Text" xml:space="preserve">
-    <value>Edit PAC</value>
-  </data>
   <data name="&gt;&gt;editpacbutton.Name" xml:space="preserve">
     <value>editpacbutton</value>
   </data>
@@ -311,42 +419,6 @@
   </data>
   <data name="&gt;&gt;editpacbutton.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="&gt;&gt;causeErrorNext.Name" xml:space="preserve">
-    <value>causeErrorNext</value>
-  </data>
-  <data name="&gt;&gt;causeErrorNext.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;causeErrorNext.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;causeErrorNext.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;sendmailbtn.Name" xml:space="preserve">
-    <value>sendmailbtn</value>
-  </data>
-  <data name="&gt;&gt;sendmailbtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;sendmailbtn.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;sendmailbtn.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 57</value>
-  </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>467, 205</value>
-  </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
     <value>groupBox1</value>
@@ -360,15 +432,6 @@
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="serverport.Location" type="System.Drawing.Point, System.Drawing">
-    <value>218, 16</value>
-  </data>
-  <data name="serverport.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 23</value>
-  </data>
-  <data name="serverport.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
   <data name="&gt;&gt;serverport.Name" xml:space="preserve">
     <value>serverport</value>
   </data>
@@ -380,21 +443,6 @@
   </data>
   <data name="&gt;&gt;serverport.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>183, 19</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 15</value>
-  </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Port</value>
   </data>
   <data name="&gt;&gt;label5.Name" xml:space="preserve">
     <value>label5</value>
@@ -408,21 +456,6 @@
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 19</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>17, 15</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>IP</value>
-  </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
   </data>
@@ -434,15 +467,6 @@
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
     <value>4</value>
-  </data>
-  <data name="serveripaddrtextbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>37, 16</value>
-  </data>
-  <data name="serveripaddrtextbox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 23</value>
-  </data>
-  <data name="serveripaddrtextbox.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
   </data>
   <data name="&gt;&gt;serveripaddrtextbox.Name" xml:space="preserve">
     <value>serveripaddrtextbox</value>
@@ -460,7 +484,7 @@
     <value>4, 24</value>
   </data>
   <data name="serversettingpage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1123, 495</value>
+    <value>1123, 569</value>
   </data>
   <data name="serversettingpage.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -571,7 +595,7 @@
     <value>3, 3, 3, 3</value>
   </data>
   <data name="serverdebugpage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1123, 495</value>
+    <value>1123, 569</value>
   </data>
   <data name="serverdebugpage.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -598,7 +622,7 @@
     <value>3, 4, 3, 4</value>
   </data>
   <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1131, 523</value>
+    <value>1131, 597</value>
   </data>
   <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -771,6 +795,78 @@
   <data name="ammo.Width" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
+  <data name="editpacbutton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 280</value>
+  </data>
+  <data name="editpacbutton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 23</value>
+  </data>
+  <data name="editpacbutton.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="editpacbutton.Text" xml:space="preserve">
+    <value>Edit PAC</value>
+  </data>
+  <data name="&gt;&gt;editpacbutton.Name" xml:space="preserve">
+    <value>editpacbutton</value>
+  </data>
+  <data name="&gt;&gt;editpacbutton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editpacbutton.Parent" xml:space="preserve">
+    <value>serversettingpage</value>
+  </data>
+  <data name="&gt;&gt;editpacbutton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;causeErrorNext.Name" xml:space="preserve">
+    <value>causeErrorNext</value>
+  </data>
+  <data name="&gt;&gt;causeErrorNext.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;causeErrorNext.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;causeErrorNext.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;sendmailbtn.Name" xml:space="preserve">
+    <value>sendmailbtn</value>
+  </data>
+  <data name="&gt;&gt;sendmailbtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sendmailbtn.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;sendmailbtn.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 57</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>467, 205</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>serversettingpage</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="causeErrorNext.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -821,6 +917,102 @@
   </data>
   <data name="&gt;&gt;sendmailbtn.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="serverport.Location" type="System.Drawing.Point, System.Drawing">
+    <value>218, 16</value>
+  </data>
+  <data name="serverport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 23</value>
+  </data>
+  <data name="serverport.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;serverport.Name" xml:space="preserve">
+    <value>serverport</value>
+  </data>
+  <data name="&gt;&gt;serverport.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;serverport.Parent" xml:space="preserve">
+    <value>serversettingpage</value>
+  </data>
+  <data name="&gt;&gt;serverport.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>183, 19</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 15</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Port</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>serversettingpage</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 19</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 15</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>IP</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>serversettingpage</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="serveripaddrtextbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 16</value>
+  </data>
+  <data name="serveripaddrtextbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 23</value>
+  </data>
+  <data name="serveripaddrtextbox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;serveripaddrtextbox.Name" xml:space="preserve">
+    <value>serveripaddrtextbox</value>
+  </data>
+  <data name="&gt;&gt;serveripaddrtextbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;serveripaddrtextbox.Parent" xml:space="preserve">
+    <value>serversettingpage</value>
+  </data>
+  <data name="&gt;&gt;serveripaddrtextbox.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1024,7 +1216,7 @@
     <value>172, 17</value>
   </metadata>
   <data name="statusStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 538</value>
+    <value>0, 612</value>
   </data>
   <data name="statusStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>1155, 24</value>
@@ -1075,7 +1267,7 @@
     <value>7, 15</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1155, 562</value>
+    <value>1155, 636</value>
   </data>
   <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
     <value>맑은 고딕, 9pt</value>
@@ -1235,6 +1427,36 @@
   </data>
   <data name="&gt;&gt;ind_RX_timer.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;enemy_group_id.Name" xml:space="preserve">
+    <value>enemy_group_id</value>
+  </data>
+  <data name="&gt;&gt;enemy_group_id.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;enemy_leader.Name" xml:space="preserve">
+    <value>enemy_leader</value>
+  </data>
+  <data name="&gt;&gt;enemy_leader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;enemy_bosshp.Name" xml:space="preserve">
+    <value>enemy_bosshp</value>
+  </data>
+  <data name="&gt;&gt;enemy_bosshp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;enemy_leaderhp.Name" xml:space="preserve">
+    <value>enemy_leaderhp</value>
+  </data>
+  <data name="&gt;&gt;enemy_leaderhp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mission_name.Name" xml:space="preserve">
+    <value>mission_name</value>
+  </data>
+  <data name="&gt;&gt;mission_name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form1</value>

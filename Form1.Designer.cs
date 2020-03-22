@@ -33,6 +33,9 @@
             this.server_togglebtn = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.informationpage = new System.Windows.Forms.TabPage();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.enemysearchtextBox = new System.Windows.Forms.TextBox();
+            this.enemy_list_gridview = new System.Windows.Forms.DataGridView();
             this.dollsettingpage = new System.Windows.Forms.TabPage();
             this.addtdoll = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
@@ -58,6 +61,7 @@
             this.equipsettingpage = new System.Windows.Forms.TabPage();
             this.fairysettingpage = new System.Windows.Forms.TabPage();
             this.serversettingpage = new System.Windows.Forms.TabPage();
+            this.editpacbutton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.causeErrorNext = new System.Windows.Forms.CheckBox();
             this.sendmailbtn = new System.Windows.Forms.Button();
@@ -80,8 +84,15 @@
             this.server_status_text = new System.Windows.Forms.ToolStripStatusLabel();
             this.ind_TX_timer = new System.Windows.Forms.Timer(this.components);
             this.ind_RX_timer = new System.Windows.Forms.Timer(this.components);
-            this.editpacbutton = new System.Windows.Forms.Button();
+            this.enemy_group_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.enemy_leader = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.enemy_bosshp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.enemy_leaderhp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mission_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tabControl1.SuspendLayout();
+            this.informationpage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.enemy_list_gridview)).BeginInit();
             this.dollsettingpage.SuspendLayout();
             this.serversettingpage.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -111,9 +122,47 @@
             // 
             // informationpage
             // 
+            this.informationpage.Controls.Add(this.groupBox2);
+            this.informationpage.Controls.Add(this.textBox1);
+            this.informationpage.Controls.Add(this.enemysearchtextBox);
+            this.informationpage.Controls.Add(this.enemy_list_gridview);
             resources.ApplyResources(this.informationpage, "informationpage");
             this.informationpage.Name = "informationpage";
             this.informationpage.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            resources.ApplyResources(this.textBox1, "textBox1");
+            this.textBox1.Name = "textBox1";
+            // 
+            // enemysearchtextBox
+            // 
+            resources.ApplyResources(this.enemysearchtextBox, "enemysearchtextBox");
+            this.enemysearchtextBox.Name = "enemysearchtextBox";
+            this.enemysearchtextBox.TextChanged += new System.EventHandler(this.enemysearchtextBox_TextChanged);
+            // 
+            // enemy_list_gridview
+            // 
+            this.enemy_list_gridview.AllowUserToAddRows = false;
+            this.enemy_list_gridview.AllowUserToDeleteRows = false;
+            this.enemy_list_gridview.AllowUserToResizeRows = false;
+            resources.ApplyResources(this.enemy_list_gridview, "enemy_list_gridview");
+            this.enemy_list_gridview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.enemy_list_gridview.BackgroundColor = System.Drawing.SystemColors.ControlDark;
+            this.enemy_list_gridview.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical;
+            this.enemy_list_gridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.enemy_list_gridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.enemy_group_id,
+            this.enemy_leader,
+            this.enemy_bosshp,
+            this.enemy_leaderhp,
+            this.mission_name});
+            this.enemy_list_gridview.MultiSelect = false;
+            this.enemy_list_gridview.Name = "enemy_list_gridview";
+            this.enemy_list_gridview.ReadOnly = true;
+            this.enemy_list_gridview.RowTemplate.Height = 23;
+            this.enemy_list_gridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.enemy_list_gridview.SortCompare += new System.Windows.Forms.DataGridViewSortCompareEventHandler(this.enemy_list_gridview_SortCompare);
             // 
             // dollsettingpage
             // 
@@ -262,6 +311,13 @@
             resources.ApplyResources(this.serversettingpage, "serversettingpage");
             this.serversettingpage.Name = "serversettingpage";
             this.serversettingpage.UseVisualStyleBackColor = true;
+            // 
+            // editpacbutton
+            // 
+            resources.ApplyResources(this.editpacbutton, "editpacbutton");
+            this.editpacbutton.Name = "editpacbutton";
+            this.editpacbutton.UseVisualStyleBackColor = true;
+            this.editpacbutton.Click += new System.EventHandler(this.editpacbutton_Click);
             // 
             // groupBox1
             // 
@@ -415,12 +471,41 @@
             // 
             this.ind_RX_timer.Tick += new System.EventHandler(this.ind_RX_timer_Tick);
             // 
-            // editpacbutton
+            // enemy_group_id
             // 
-            resources.ApplyResources(this.editpacbutton, "editpacbutton");
-            this.editpacbutton.Name = "editpacbutton";
-            this.editpacbutton.UseVisualStyleBackColor = true;
-            this.editpacbutton.Click += new System.EventHandler(this.editpacbutton_Click);
+            resources.ApplyResources(this.enemy_group_id, "enemy_group_id");
+            this.enemy_group_id.Name = "enemy_group_id";
+            this.enemy_group_id.ReadOnly = true;
+            // 
+            // enemy_leader
+            // 
+            resources.ApplyResources(this.enemy_leader, "enemy_leader");
+            this.enemy_leader.Name = "enemy_leader";
+            this.enemy_leader.ReadOnly = true;
+            // 
+            // enemy_bosshp
+            // 
+            resources.ApplyResources(this.enemy_bosshp, "enemy_bosshp");
+            this.enemy_bosshp.Name = "enemy_bosshp";
+            this.enemy_bosshp.ReadOnly = true;
+            // 
+            // enemy_leaderhp
+            // 
+            resources.ApplyResources(this.enemy_leaderhp, "enemy_leaderhp");
+            this.enemy_leaderhp.Name = "enemy_leaderhp";
+            this.enemy_leaderhp.ReadOnly = true;
+            // 
+            // mission_name
+            // 
+            resources.ApplyResources(this.mission_name, "mission_name");
+            this.mission_name.Name = "mission_name";
+            this.mission_name.ReadOnly = true;
+            // 
+            // groupBox2
+            // 
+            resources.ApplyResources(this.groupBox2, "groupBox2");
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.TabStop = false;
             // 
             // Form1
             // 
@@ -432,6 +517,9 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
+            this.informationpage.ResumeLayout(false);
+            this.informationpage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.enemy_list_gridview)).EndInit();
             this.dollsettingpage.ResumeLayout(false);
             this.serversettingpage.ResumeLayout(false);
             this.serversettingpage.PerformLayout();
@@ -499,6 +587,15 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox serveripaddrtextbox;
         private System.Windows.Forms.Button editpacbutton;
+        private System.Windows.Forms.DataGridView enemy_list_gridview;
+        private System.Windows.Forms.TextBox enemysearchtextBox;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn enemy_group_id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn enemy_leader;
+        private System.Windows.Forms.DataGridViewTextBoxColumn enemy_bosshp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn enemy_leaderhp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mission_name;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }
 
